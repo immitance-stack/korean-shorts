@@ -1,0 +1,65 @@
+{
+  "id": "test-hiking",
+  "status": "draft",
+  "style": "photo",
+  "topic": {
+    "ko": "등산의 즐거움",
+    "en": "Why I love hiking",
+    "vi": "Niềm vui leo núi"
+  },
+  "characters": [
+    {
+      "id": "woman",
+      "name": "여자",
+      "color": "#e0623f",
+      "voice": "Kore"
+    },
+    {
+      "id": "man",
+      "name": "남자",
+      "color": "#2f5aa8",
+      "voice": "Charon"
+    }
+  ],
+  "lines": [
+    {
+      "speaker": "woman",
+      "shot": "shotA.png",
+      "emotion": "relieved and refreshed",
+      "ko": "그동안 답답했는데 높은 데 올라오니까 좋네요.",
+      "en": "I've been feeling so cooped up, but it's great to be up this high.",
+      "vi": "Dạo này em thấy bức bối quá, nhưng lên chỗ cao thế này thì dễ chịu thật.",
+      "focus": {
+        "x": 0.47,
+        "y": 0.5,
+        "zoom": 1.12
+      }
+    },
+    {
+      "speaker": "man",
+      "shot": "shotA.png",
+      "emotion": "calm and content",
+      "ko": "그렇죠? 그래서 저는 등산이 좋아요. 이렇게 정상에서 멀리 바라보고 있으면 마음이 편해져요.",
+      "en": "Right? That's why I love hiking. When I look far out from the summit like this, I feel at peace.",
+      "vi": "Đúng không? Vì thế mà anh thích leo núi. Đứng trên đỉnh núi nhìn ra xa thế này, lòng anh thấy thanh thản.",
+      "focus": {
+        "x": 0.66,
+        "y": 0.465,
+        "zoom": 1.9
+      }
+    },
+    {
+      "speaker": "woman",
+      "shot": "shotA.png",
+      "emotion": "cheerful",
+      "ko": "맞아요. 우리 이제 자주 와요.",
+      "en": "You're right. Let's come here often from now on.",
+      "vi": "Đúng vậy. Từ giờ mình hay đến đây nhé.",
+      "focus": {
+        "x": 0.37,
+        "y": 0.485,
+        "zoom": 1.9
+      }
+    }
+  ]
+}

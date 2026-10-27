@@ -143,18 +143,27 @@ def build(ep_path, lang):
         states.append({k: dict(v) for k, v in state.items()})
 
     html = []
-    bg, fg = SCENES[ep.get("scene", "cafe")]
-    html.append(bg().replace("__DUR__", str(total)))
-    for c in ep["characters"]:
-        s0 = states[0][c["id"]]
-        svg = character_svg({**c, **s0})
-        pos = "left:-30px; top:430px;" if c["side"] == "left" else "left:550px; top:418px;"
-        html.append(f'<div id="{c["id"]}" class="char clip" data-start="0" data-duration="{total}" style="{pos}">{svg}</div>')
-    for p in ep.get("props", []):
-        if p["type"] == "flowers":
-            html.append(f'<div id="prop-flowers" class="prop clip" data-start="0" data-duration="{total}" '
-                        f'style="left:640px; top:1000px; width:260px; height:330px; opacity:0;">{FLOWERS}</div>')
-    html.append(fg().replace("__DUR__", str(total)))
+    photo = ep.get("style") == "photo"
+    if photo:  # 실사풍: 대사마다 지정한 장면 사진(shot)을 보여 준다
+        shots = list(dict.fromkeys(l["shot"] for l in lines))
+        os.makedirs(os.path.join(proj, "shots"), exist_ok=True)
+        for k, s in enumerate(shots):
+            shutil.copy(os.path.join(ep_dir, s), os.path.join(proj, "shots", os.path.basename(s)))
+            html.append(f'<img id="shot{k}" class="shot clip" src="shots/{os.path.basename(s)}" data-start="0" data-duration="{total}" alt="">')
+        html.append(f'<div id="shade" class="clip" data-start="0" data-duration="{total}"></div>')
+    else:
+        bg, fg = SCENES[ep.get("scene", "cafe")]
+        html.append(bg().replace("__DUR__", str(total)))
+        for c in ep["characters"]:
+            s0 = states[0][c["id"]]
+            svg = character_svg({**c, **s0})
+            pos = "left:-30px; top:430px;" if c["side"] == "left" else "left:550px; top:418px;"
+            html.append(f'<div id="{c["id"]}" class="char clip" data-start="0" data-duration="{total}" style="{pos}">{svg}</div>')
+        for p in ep.get("props", []):
+            if p["type"] == "flowers":
+                html.append(f'<div id="prop-flowers" class="prop clip" data-start="0" data-duration="{total}" '
+                            f'style="left:640px; top:1000px; width:260px; height:330px; opacity:0;">{FLOWERS}</div>')
+        html.append(fg().replace("__DUR__", str(total)))
 
     t = ep["topic"]
     html.append(f'''<div id="title" class="clip" data-start="0" data-duration="{total}" data-layout-allow-overlap>
@@ -169,7 +178,8 @@ def build(ep_path, lang):
         for i, (l, (a, b)) in enumerate(zip(lines, spans)):
             end = spans[i + 1][0] - 0.05 if i + 1 < len(spans) else until
             c = chars[l["speaker"]]
-            html.append(f'''<div id="{prefix}{i}" class="sub clip" data-start="{a - 0.15:.2f}" data-duration="{end - a + 0.15:.2f}" data-layout-allow-overlap>
+            size = " long" if len(l["ko"]) > 34 or len(l[lang]) > 85 else ""  # 긴 대사는 글자를 줄여 카드 안에 맞춘다
+            html.append(f'''<div id="{prefix}{i}" class="sub{size} clip" data-start="{a - 0.15:.2f}" data-duration="{end - a + 0.15:.2f}" data-layout-allow-overlap>
       <div class="who" style="background:{c["color"]}">{c["name"]}</div>
       <div class="ko">{l["ko"]}</div><div class="tr">{l[lang]}</div></div>''')
     subs("s1-", part1, p1 + a1 + 0.3)
@@ -182,7 +192,31 @@ def build(ep_path, lang):
 
     # 타임라인 이벤트
     js = []
+    if photo:
+        sid = {s: f"#shot{k}" for k, s in enumerate(shots)}
+        js.append(f'tl.set("{sid[lines[0]["shot"]]}",{{opacity:1}},0);')
+        for spans, end in ((part1, p1 + a1 + 0.4), (part2, total)):
+            for i, l in enumerate(lines):
+                a = spans[i][0] - 0.35
+                nxt = spans[i + 1][0] - 0.35 if i + 1 < len(spans) else end
+                me = sid[l["shot"]]
+                for other in sid.values():
+                    if other != me:
+                        js.append(f'tl.to("{other}",{{opacity:0,duration:0.5}},{a:.2f});')
+                js.append(f'tl.to("{me}",{{opacity:1,duration:0.5}},{a:.2f});')
+                f = l.get("focus")
+                if f:  # 한 장의 사진에서 말하는 사람 얼굴로 확대 (가상 클로즈업). 얼굴을 화면 가로 중앙, 세로 45% 지점에 둔다
+                    def at(s):
+                        px, py = f["x"] * 1080, f["y"] * 1920
+                        return round(540 - 540 - s * (px - 540)), round(864 - 960 - s * (py - 960))
+                    z0, z1 = f["zoom"], f["zoom"] * 1.06
+                    (x0, y0), (x1, y1) = at(z0), at(z1)
+                    js.append(f'tl.fromTo("{me}",{{scale:{z0},x:{x0},y:{y0}}},{{scale:{z1:.3f},x:{x1},y:{y1},duration:{nxt - a + 0.5:.2f},ease:"none"}},{a:.2f});')
+                else:
+                    js.append(f'tl.fromTo("{me}",{{scale:1.0,x:0,y:0}},{{scale:1.08,x:{-18 if i % 2 else 18},y:0,duration:{nxt - a + 0.5:.2f},ease:"none"}},{a:.2f});')
     for part, spans, audio_off, audio_file in ((1, part1, p1, src), (2, part2, p2, slow_path)):
+        if photo:
+            break
         for i, (l, (a, b)) in enumerate(zip(lines, spans)):
             for cid, st in states[i].items():
                 for kind in ("brow", "mouth"):
@@ -201,10 +235,10 @@ def build(ep_path, lang):
                 js.append(f'tl.set("#prop-flowers",{{opacity:0,x:0,y:120,rotation:10}},{spans[0][0] - 0.3:.2f});')
                 js.append(f'tl.to("#prop-flowers",{{opacity:1,y:0,rotation:0,duration:0.45,ease:"back.out(2)"}},{show:.2f});')
                 js.append(f'tl.to("#prop-flowers",{{x:-360,y:-30,rotation:-8,duration:0.8,ease:"power2.inOut"}},{give:.2f});')
-    for cid in chars:
+    for cid in ([] if photo else chars):
         js.append(f'tl.to("#{cid}",{{filter:"brightness(1)",duration:0.3}},{p1 + a1 + 0.2:.2f});')
         js.append(f'tl.to("#{cid}",{{filter:"brightness(1)",duration:0.3}},{p2 + a2 + 0.2:.2f});')
-    for i, cid in enumerate(chars):
+    for i, cid in enumerate([] if photo else chars):
         for x in range(1, int(total / 3.4)):
             js.append(f'blink("{cid}",{x * 3.4 + i * 1.1:.2f});')
         js.append(f'tl.to("#{cid}-breath",{{y:-7,duration:{1.3 + i * 0.15:.2f},repeat:{int(total / 1.3)},yoyo:true,ease:"sine.inOut"}},{i * 0.4});')
@@ -239,11 +273,14 @@ TEMPLATE = '''<!doctype html>
   .char { position:absolute; width:560px; height:840px; z-index:6; }
   .char svg { width:560px; height:840px; }
   .prop { position:absolute; z-index:9; }
+  .shot { position:absolute; left:0; top:0; width:1080px; height:1920px; object-fit:cover; opacity:0; z-index:1; transform-origin:50% 50%; }
+  #shade { position:absolute; left:0; top:0; width:1080px; height:1920px; z-index:2;
+    background:linear-gradient(180deg, rgba(0,0,0,.78) 0%, rgba(0,0,0,.55) 13%, rgba(0,0,0,0) 27%, rgba(0,0,0,0) 60%, rgba(0,0,0,.45) 100%); }
   .prop svg { width:100%; height:100%; }
   #title { position:absolute; top:70px; left:0; width:1080px; text-align:center; z-index:20; color:#fff; }
   #title .chip { display:inline-block; background:#c8324a; font-size:34px; font-weight:800; padding:10px 28px; border-radius:30px; }
   #title .topic { margin-top:18px; font-size:76px; font-weight:800; letter-spacing:-1px; text-shadow:0 6px 18px rgba(0,0,0,.45); }
-  #title .topic-sub { margin-top:8px; font-family:"Latin",sans-serif; font-size:40px; font-weight:400; color:#f3e3d6; text-shadow:0 3px 10px rgba(0,0,0,.5); }
+  #title .topic-sub { margin-top:8px; font-family:"Latin",sans-serif; font-size:40px; font-weight:700; color:#ffffff; text-shadow:0 3px 10px rgba(0,0,0,.5); }
   .pill { position:absolute; top:350px; left:50%; transform:translateX(-50%); z-index:21; white-space:nowrap;
     font-size:34px; font-weight:800; color:#fff; background:rgba(20,12,10,.55); padding:10px 30px; border-radius:30px; }
   .pill.slow { background:rgba(200,50,74,.85); }
@@ -253,6 +290,8 @@ TEMPLATE = '''<!doctype html>
   .sub .who { display:inline-block; color:#fff; font-size:36px; font-weight:800; padding:8px 26px; border-radius:26px; margin-bottom:22px; }
   .sub .ko { font-size:64px; font-weight:800; color:#211915; line-height:1.3; letter-spacing:-1px; word-break:keep-all; }
   .sub .tr { margin-top:28px; font-family:"Latin",sans-serif; font-size:46px; color:#5a4c44; line-height:1.3; }
+  .sub.long .ko { font-size:54px; }
+  .sub.long .tr { margin-top:20px; font-size:39px; }
   #trans { position:absolute; left:0; top:0; width:1080px; height:1920px; z-index:40; background:rgba(25,16,14,.82);
     display:flex; flex-direction:column; align-items:center; justify-content:center; color:#fff; }
   #trans .big { font-size:96px; font-weight:800; }
