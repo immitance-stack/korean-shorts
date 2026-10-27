@@ -14,7 +14,7 @@
 ## 업로드 대상
 | 플랫폼 | 버전 | 방법 |
 |---|---|---|
-| YouTube | en, vi 둘 다 | Zapier `upload_video` (영상 파일은 GitHub Release의 공개 주소로 전달) |
+| YouTube | en, vi 둘 다 (**한 채널**에 같은 날 2편) | Zapier `upload_video` (영상 파일은 GitHub Release의 공개 주소로 전달) |
 | TikTok | vi | 사용자가 직접 업로드. 영상 파일 + 설명/해시태그를 SendUserFile로 전달 |
 | Instagram 릴스 | — | 사용하지 않음 |
 
