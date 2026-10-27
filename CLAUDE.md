@@ -8,7 +8,8 @@
 - 9:16 세로(1080×1920), 길이는 대화에 따라 30~60초.
 - 구성: 인트로(주제) → ① 대화 듣기(보통 속도) → "천천히 한 번 더 / 따라 말해 보세요" 카드 → ② 천천히 한 번 더(문장 사이 쉼) → 끝.
 - 언어 버전 2개: `en`(한국어+영어 자막), `vi`(한국어+베트남어 자막). 그림·음성은 같고 자막만 다르다.
-- 그림체: 성숙한 비율의 입체 일러스트(명암·그림자). 배경은 흐림 처리(원근감).
+- 그림체: **실사풍 AI 사진**(`"style": "photo"`). 편마다 사진 3장 — ① 두 사람이 함께 나온 장면, ② 남자 클로즈업, ③ 여자 클로즈업. 대사마다 해당 사진을 천천히 확대하며 보여 준다.
+  (예전 일러스트 방식 `characters.py`·`scenes.py`는 예비로 남겨 둠)
 - 다음 화 예고 없음. 매 편이 독립된 대화.
 
 ## 업로드 대상
@@ -25,12 +26,23 @@
    - 대본: 여자와 남자가 2번 정도 주고받는 대화.
    - 그 상황의 **앞뒤 이야기를 조금 덧붙여 3~4편**으로 나눈다. 각 편은 4~6문장, 자연스러운 구어체, 학습자 수준에 맞는 표현.
    - 편마다 `episodes/<YYYY-Www>/<NN>/episode.json`을 만든다(아래 형식). 번역은 **DeepL**(`translate-text`, EN-US·VI)로 하고, 베트남어 호칭(anh/em, chị/em, bạn 등)은 관계에 맞게 다듬는다.
-   - 편별 줄거리·대사·번역을 표로 보여 주고 **대본 승인**을 받는다. 승인되면 `status: "script_approved"`, 업로드 예정일(`publish_date`, 다음 날부터 하루 1편)을 적고 커밋·푸시한다.
-2. **화~토요일 – 매일 제작 (루틴 `trig_01TUd5wvgp6Xct7f8pbXaQiN`이 매일 08:43 KST에 같은 대화로 작업을 보낸다)**
+   - **베트남어는 사용자가 읽지 못한다.** 그래서 베트남어 문장마다 DeepL로 **한국어 역번역**(VI→KO)을 해서 `vi_back_ko`에 적고, 원문과 뜻이 다르면 고친다.
+     호칭: 존댓말(해요체) 대화는 기본 `tôi`(저)·`chúng ta`(우리)·`anh/chị`(상대) 를 쓴다. `anh/em`처럼 '나/너'가 헷갈리는 표현은 역번역으로 꼭 확인.
+   - 편별 줄거리·대사·영어·**베트남어 역번역(한국어)**을 표로 보여 주고 **대본 승인**을 받는다. 승인되면 `status: "script_approved"`, 업로드 예정일(`publish_date`, 다음 날부터 하루 1편)을 적고 커밋·푸시한다.
+2. **화~토요일 – 매일 제작 (루틴 `trig_01TUd5wvgp6Xct7f8pbXaQiN`이 매일 16:43 KST에 같은 대화로 작업을 보낸다)**
    - `status == "script_approved"`이고 `publish_date`가 오늘 이전인 편 중 가장 이른 것 1편을 만든다. 없으면 아무것도 하지 않고 끝낸다.
    - 제작 → 검사 → 사용자에게 영상 2개(en, vi)와 YouTube 제목·설명, TikTok 설명을 보내고 **승인 요청**. `status: "awaiting_approval"`.
    - 사용자가 "승인" → 업로드(아래) → `status: "uploaded"`, 링크 기록 → 커밋·푸시.
    - "수정: ..." → 고쳐서 다시 보여 준다.
+
+## 사진 만들기 (ElevenLabs, 실사풍)
+- ElevenLabs 무료 요금제: **하루 이미지 3장까지**(편당 3장 = 하루 1편). 장당 2K 세로 약 612 크레딧. 한도(429 `free_tier_image_limit_reached`)에 걸리면 다음 날 다시 한다.
+- 순서
+  1. `creative_generate_image`(model `gemini-3.1-flash-image`, `estimate_only: true`)로 ① 두 사람 장면 노드를 만들고 `creative_update_node`로 `{"aspect_ratio":"9:16","resolution":"2K"}` 설정 → `creative_run_flow_nodes`(generations_count 1).
+  2. ②③은 `connect_from: [①노드]`로 같은 인물을 기준 삼아 같은 방법으로 만든다(프롬프트에 "Using the reference image ... same man/woman").
+  3. `creative_get_flow_run_status`의 `content_url`(2시간 유효)을 curl로 받아 `episodes/<주>/<NN>/shotA.png`, `shotB.png`, `shotC.png`로 저장.
+- 프롬프트 요령: "A photorealistic film still, vertical 9:16" + 인물(나이·머리·옷) + 장소·시간 + 얼굴은 화면 가운데(아래 30%는 자막 카드가 가림) + "Shot on 35mm/85mm lens, natural skin texture, subtle film grain. No text, no watermark."
+- episode.json의 각 대사에 `"shot": "shotA.png"` 지정. 사진이 1장뿐이면 `"focus": {"x":0.66,"y":0.47,"zoom":1.9}`로 얼굴 확대(가상 클로즈업).
 
 ## 제작 명령
 ```bash
