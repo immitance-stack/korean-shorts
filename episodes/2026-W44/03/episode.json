@@ -1,0 +1,74 @@
+{
+  "id": "2026-W44-03",
+  "status": "draft",
+  "publish_date": "2026-10-30",
+  "style": "photo",
+  "cast": "민수: 20대 초반 한국 남성, 짧은 검은 머리, 카페 아르바이트생(근무 중엔 흰 셔츠에 진녹색 앞치마). 사장님: 40대 중반 한국 여성, 어깨 길이 갈색 단발, 베이지 카디건, 작은 동네 카페 사장.",
+  "topic": {
+    "ko": "다 나았는지 물어보기",
+    "en": "Asking if someone has recovered",
+    "vi": "Hỏi thăm đã khỏi bệnh chưa"
+  },
+  "characters": [
+    {
+      "id": "boss",
+      "name": "사장님",
+      "color": "#c0466b",
+      "voice": "Kore"
+    },
+    {
+      "id": "minsu",
+      "name": "민수",
+      "color": "#2f5aa8",
+      "voice": "Charon"
+    }
+  ],
+  "lines": [
+    {
+      "speaker": "boss",
+      "shot": "shotA.png",
+      "emotion": "cheerful and caring",
+      "ko": "민수 씨, 감기는 다 나았어요?",
+      "en": "Minsu, are you over your cold now?",
+      "vi": "Min-su à, em khỏi cảm hẳn chưa?",
+      "vi_back_ko": "민수야, 감기는 다 나았니?"
+    },
+    {
+      "speaker": "minsu",
+      "shot": "shotB.png",
+      "emotion": "bright and grateful",
+      "ko": "네, 푹 쉬어서 다 나았어요. 걱정해 주셔서 감사합니다.",
+      "en": "Yes, I rested well, so I'm all better. Thank you for worrying about me.",
+      "vi": "Dạ, em nghỉ ngơi nhiều nên khỏi hẳn rồi ạ. Cảm ơn chị đã lo cho em.",
+      "vi_back_ko": "네, 푹 쉬었더니 완전히 나았어요. 걱정해 주셔서 감사합니다."
+    },
+    {
+      "speaker": "boss",
+      "shot": "shotC.png",
+      "emotion": "relieved and warm",
+      "ko": "다행이네요. 그래도 무리하지 마요.",
+      "en": "That's a relief. Still, don't overdo it.",
+      "vi": "May quá. Nhưng em cũng đừng làm quá sức nhé.",
+      "vi_back_ko": "다행이네요. 하지만 너무 무리하지는 마세요."
+    }
+  ],
+  "shots": {
+    "shotA": "며칠 뒤 아침 카페. 건강해진 민수가 앞치마를 매며 웃고, 사장님이 반갑게 맞음 (투샷)",
+    "shotB": "민수 클로즈업. 밝게 웃으며 감사 인사",
+    "shotC": "사장님 클로즈업. 안심하며 따뜻하게 웃음"
+  },
+  "youtube": {
+    "en": {
+      "title": "Korean Conversation: Are You Feeling Better? 😊 #shorts",
+      "description": "Today's Korean: 다 나았는지 물어보기 (Asking if someone has recovered)\n\n사장님: 민수 씨, 감기는 다 나았어요?\n민수: 네, 푹 쉬어서 다 나았어요. 걱정해 주셔서 감사합니다.\n사장님: 다행이네요. 그래도 무리하지 마요.\n\nListen, then repeat slowly! #LearnKorean #KoreanConversation #Korean #shorts\n\nVoices and images were created with AI."
+    },
+    "vi": {
+      "title": "Hội thoại tiếng Hàn: Hỏi thăm đã khỏi bệnh chưa 😊 #shorts",
+      "description": "Tiếng Hàn hôm nay: 다 나았는지 물어보기 (Hỏi thăm đã khỏi bệnh chưa)\n\n사장님: 민수 씨, 감기는 다 나았어요?\n민수: 네, 푹 쉬어서 다 나았어요. 걱정해 주셔서 감사합니다.\n사장님: 다행이네요. 그래도 무리하지 마요.\n\nNghe rồi nói theo nhé! #HocTiengHan #TiengHan #shorts\n\nGiọng nói và hình ảnh được tạo bằng AI."
+    }
+  },
+  "tiktok_vi": {
+    "caption": "Tiếng Hàn: Hỏi thăm đã khỏi bệnh chưa 😊 Nghe rồi nói theo nhé! #hoctienghan #tienghan #tienghangiaotiep #korean"
+  },
+  "uploads": {}
+}
