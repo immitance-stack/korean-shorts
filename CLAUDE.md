@@ -86,11 +86,16 @@ HYPERFRAMES_SKIP_SKILLS=1 npx -y hyperframes@0.8.191 render    # renders/*.mp4
 - 대화에 맞게 매번 다른 인물(나이·옷·머리)을 구성한다.
 
 ## 업로드 절차 (승인 후)
-1. `gh release create <id> project_en/renders/*.mp4 project_vi/renders/*.mp4 --repo immitance-stack/korean-shorts` 로 공개 주소를 만든다(파일 이름은 `<id>_en.mp4`, `<id>_vi.mp4`로 바꿔서).
-2. Zapier YouTube `upload_video`로 en, vi를 각각 올린다. 제목·설명은 episode.json의 값. 언어 코드: en / vi, 오디오 언어 ko.
-   YouTube 설명 끝에 AI 음성·일러스트 사용 사실을 한 줄 적는다.
-3. vi 영상 파일과 `tiktok_vi.caption`을 사용자에게 보내 TikTok에 직접 올리도록 안내한다.
-4. 링크를 `uploads`에 기록, `status: "uploaded"`, 커밋·푸시.
+1. `bash studio/media_branch.sh put <id> <en.mp4> <vi.mp4>` 로 공개 주소 2개를 만든다.
+   (이 세션에서는 GitHub 릴리스 생성·브랜치 삭제가 막혀 있어 `media` 브랜치를 덮어쓰는 방식을 쓴다.)
+2. Zapier YouTube `upload_video`(tool_name `youtube_upload_video`, 기본 연결 = 사용자의 채널 "TongTong Korean School")로 en, vi를 각각 올린다.
+   - `video`: 1번의 주소 / `title`·`description`: episode.json의 값 / `privacy_status`: `public`
+   - `category_id`: `27`(Education) / `default_language`: `en` 또는 `vi` / `default_audio_language`: `ko`
+   - `made_for_kids`: `false` / `tags`: Korean, Learn Korean, Korean conversation 등
+   - 설명 끝에 AI 음성·일러스트 사용 사실을 한 줄 적는다.
+3. `bash studio/media_branch.sh clear` 로 공개 영상을 비운다.
+4. vi 영상 파일과 `tiktok_vi.caption`을 사용자에게 보내 TikTok에 직접 올리도록 안내한다.
+5. 링크를 `uploads`에 기록, `status: "uploaded"`, 커밋·푸시.
 
 ## 비용 원칙
 무료 위주. Gemini TTS 무료 한도, Zapier 무료(월 100회 작업, 업로드 1번에 약 2회), HyperFrames(오픈소스)만 사용.
