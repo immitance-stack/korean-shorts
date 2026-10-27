@@ -1,0 +1,111 @@
+{
+  "id": "sample-001",
+  "topic": {
+    "ko": "늦었을 때 사과하기",
+    "en": "Apologizing for being late",
+    "vi": "Xin lỗi khi đến muộn"
+  },
+  "scene": "cafe",
+  "characters": [
+    {
+      "id": "jisu",
+      "name": "지수",
+      "side": "left",
+      "color": "#d64b72",
+      "gender": "female",
+      "skin": "light",
+      "hair_style": "f_long",
+      "hair_color": "#3b2a22",
+      "earrings": true,
+      "outfit": {
+        "type": "knit",
+        "color": "#efe2cc",
+        "shade": "#c9b796"
+      },
+      "voice": "Kore"
+    },
+    {
+      "id": "minho",
+      "name": "민호",
+      "side": "right",
+      "color": "#3f6fd1",
+      "gender": "male",
+      "skin": "medium",
+      "hair_style": "m_sidepart",
+      "hair_color": "#1d1715",
+      "hair_highlight": "#4a3c36",
+      "outfit": {
+        "type": "shirt",
+        "color": "#3a5a8c",
+        "shade": "#243a5e"
+      },
+      "voice": "Charon"
+    }
+  ],
+  "lines": [
+    {
+      "speaker": "jisu",
+      "ko": "너 오늘 또 늦었네? 30분이나 기다렸잖아.",
+      "en": "You're late again today? I waited a whole 30 minutes.",
+      "vi": "Hôm nay anh lại đến muộn à? Em đợi cả 30 phút rồi đấy.",
+      "expr": {
+        "jisu": {
+          "brow": "sulky",
+          "mouth": "pout"
+        },
+        "minho": {
+          "brow": "worried",
+          "mouth": "worried"
+        }
+      },
+      "emotion": "a little sulky"
+    },
+    {
+      "speaker": "minho",
+      "ko": "미안, 미안. 오는 길에 이거 사느라 늦었어.",
+      "en": "Sorry, sorry. I was late because I stopped to buy this on the way.",
+      "vi": "Xin lỗi, xin lỗi. Trên đường đến đây anh mua cái này nên bị muộn.",
+      "expr": {},
+      "emotion": "apologetic"
+    },
+    {
+      "speaker": "jisu",
+      "ko": "뭔데? 어, 꽃이네? 오늘 무슨 날이야?",
+      "en": "What is it? Oh, flowers? What's the occasion?",
+      "vi": "Cái gì thế? Ồ, hoa à? Hôm nay là ngày gì vậy?",
+      "expr": {
+        "jisu": {
+          "brow": "raised",
+          "mouth": "o"
+        },
+        "minho": {
+          "brow": "neutral",
+          "mouth": "smile"
+        }
+      },
+      "emotion": "curious then surprised"
+    },
+    {
+      "speaker": "minho",
+      "ko": "그냥. 네 생각나서.",
+      "en": "No reason. I was just thinking of you.",
+      "vi": "Chỉ là… vì anh nghĩ đến em thôi.",
+      "expr": {
+        "jisu": {
+          "brow": "neutral",
+          "mouth": "smile"
+        }
+      },
+      "emotion": "warmly"
+    }
+  ],
+  "props": [
+    {
+      "type": "flowers",
+      "line": 1,
+      "at": 2.0,
+      "give_line": 2,
+      "give_at": 1.6
+    }
+  ]
+}

@@ -1,0 +1,7 @@
+episodes/**/project_*/
+episodes/**/_normal/
+episodes/**/_slow/
+node_modules/
+__pycache__/
+.hyperframes/
+*.pyc
