@@ -17,6 +17,26 @@ def transcribe(path):
                 continue
         time.sleep(15)
     return None
+def has_english(path):
+    """음성에 영어 말소리가 섞였는지 따로 묻는다. True/False, 판단 실패 시 None."""
+    mime = "audio/wav" if path.endswith(".wav") else "audio/mp3"
+    b = base64.b64encode(open(path, "rb").read()).decode()
+    body = {"contents": [{"parts": [{"inlineData": {"mimeType": mime, "data": b}},
+            {"text": "Listen carefully. Does this audio contain ANY spoken English words (for example stage directions like 'slowly', 'warmly', 'apologetic')? Answer with exactly one word: YES or NO."}]}]}
+    for attempt in range(3):
+        for m in MODELS:
+            req = urllib.request.Request(f"https://generativelanguage.googleapis.com/v1beta/models/{m}:generateContent",
+                data=json.dumps(body).encode(), headers={"Content-Type": "application/json", "x-goog-api-key": os.environ["GOOGLE_API_KEY"]})
+            try:
+                d = json.load(urllib.request.urlopen(req, timeout=90))
+                ans = d["candidates"][0]["content"]["parts"][0]["text"].strip().upper()
+                return ans.startswith("YES")
+            except Exception:
+                continue
+        time.sleep(15)
+    return None
+
+
 if __name__ == "__main__":
     import re
     bad = 0

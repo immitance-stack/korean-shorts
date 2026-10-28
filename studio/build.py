@@ -65,15 +65,36 @@ def syllable_rate(path, ko):
     return len(re.findall(r"[가-힣]", ko)) / duration(path)
 
 
-def make_line(raw, voice, ko):
-    """한 문장을 한국어 글자만으로 생성한다. 감정·속도 지시 태그는 쓰지 않는다(영어로 소리 내 읽어 버리는 일이 있어서).
-    말 속도가 비정상(초당 3음절 미만 = 다른 말이 섞임)이면 다시 만든다."""
-    for _ in range(3):
-        sh(sys.executable, os.path.join(STUDIO, "tts_line.py"), voice, ko, raw)
-        if MIN_RATE <= syllable_rate(raw, ko) <= MAX_RATE:
-            return
-        os.remove(raw)
-    raise RuntimeError(f"음성 속도가 계속 비정상입니다: {ko}")
+def make_line(raw, voice, ko, emotion=None):
+    """한 문장 음성을 만든다.
+    1) 감정 지시 없는 기본 음성(raw 옆 .plain.wav)을 만든다 — 기준 길이이자 예비용.
+    2) 감정 지시(영어 태그)를 넣어 만들고, 지시문을 소리 내 읽었는지 검사한다:
+       기본 음성보다 30% + 0.3초 넘게 길거나, '영어가 들리나?' 질문에 YES면 버리고 다시(최대 3번).
+    3) 끝까지 실패하면 기본 음성을 쓴다."""
+    from transcribe import has_english
+    plain = raw[:-4] + ".plain.wav"
+    if not os.path.exists(plain):
+        for _ in range(3):
+            sh(sys.executable, os.path.join(STUDIO, "tts_line.py"), voice, ko, plain)
+            if MIN_RATE <= syllable_rate(plain, ko) <= MAX_RATE:
+                break
+            os.remove(plain)
+        else:
+            raise RuntimeError(f"음성 속도가 계속 비정상입니다: {ko}")
+    if emotion:
+        limit = duration(plain) * 1.3 + 0.3
+        trial = raw[:-4] + ".try.wav"
+        for n in range(3):
+            sh(sys.executable, os.path.join(STUDIO, "tts_line.py"), voice, f"[{emotion}] {ko}", trial)
+            d = duration(trial)
+            if d <= limit and has_english(trial) is False:
+                os.replace(trial, raw)
+                print(f"  감정 음성 사용 ({n + 1}번째): {ko} [{emotion}] {d:.2f}s ≤ {limit:.2f}s")
+                return
+            print(f"  감정 음성 탈락 ({n + 1}번째): {d:.2f}s, 기준 {limit:.2f}s")
+        os.remove(trial)
+    shutil.copy(plain, raw)
+    print(f"  기본 음성 사용: {ko}")
 
 
 def assemble(ep_dir, proj, ep, mode):
@@ -92,7 +113,7 @@ def assemble(ep_dir, proj, ep, mode):
     for i, ln in enumerate(lines):
         raw = os.path.join(cache, f"l{i}.wav")
         if not os.path.exists(raw):
-            make_line(raw, chars[ln["speaker"]]["voice"], ln["ko"])
+            make_line(raw, chars[ln["speaker"]]["voice"], ln["ko"], ln.get("emotion"))
         piece = os.path.join(tmp, f"l{i}.wav")
         trim = "silenceremove=start_periods=1:start_threshold=-45dB,areverse,silenceremove=start_periods=1:start_threshold=-45dB,areverse"
         tempo = f",atempo={SLOW_TEMPO}" if mode == "slow" else ""
