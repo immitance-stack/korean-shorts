@@ -18,5 +18,14 @@ def transcribe(path):
         time.sleep(15)
     return None
 if __name__ == "__main__":
+    import re
+    bad = 0
     for p in sys.argv[1:]:
-        print(os.path.basename(p), "→", transcribe(p))
+        t = transcribe(p)
+        flag = ""
+        if t is None:
+            flag, bad = "  ⚠ 받아쓰기 실패", bad + 1
+        elif re.search(r"[A-Za-z]{2,}", t):  # 영어 단어가 들리면 실패로 본다
+            flag, bad = "  ⚠ 영어가 섞임", bad + 1
+        print(os.path.basename(p), "→", t, flag)
+    sys.exit(1 if bad else 0)

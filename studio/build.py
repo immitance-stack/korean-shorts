@@ -11,6 +11,8 @@ from scenes import SCENES
 STUDIO = os.path.dirname(os.path.abspath(__file__))
 INTRO, TRANSITION, OUTRO = 1.4, 2.6, 1.4
 NORMAL_GAP, SLOW_GAP, TARGET_DB = 0.35, 1.2, -18.0
+SLOW_TEMPO = 0.75          # 느린 구간 속도 (음높이는 그대로)
+MIN_RATE, MAX_RATE = 3.0, 9.0  # 보통 속도 음성의 정상 범위 (초당 음절)
 
 
 def sh(*a):
@@ -59,12 +61,27 @@ def normalize_dialogue(src, lines, out):
     sh("ffmpeg", "-y", "-i", src, "-af", ",".join(vols + ["alimiter=limit=0.95"]), "-b:a", "160k", out)
 
 
+def syllable_rate(path, ko):
+    return len(re.findall(r"[가-힣]", ko)) / duration(path)
+
+
+def make_line(raw, voice, ko):
+    """한 문장을 한국어 글자만으로 생성한다. 감정·속도 지시 태그는 쓰지 않는다(영어로 소리 내 읽어 버리는 일이 있어서).
+    말 속도가 비정상(초당 3음절 미만 = 다른 말이 섞임)이면 다시 만든다."""
+    for _ in range(3):
+        sh(sys.executable, os.path.join(STUDIO, "tts_line.py"), voice, ko, raw)
+        if MIN_RATE <= syllable_rate(raw, ko) <= MAX_RATE:
+            return
+        os.remove(raw)
+    raise RuntimeError(f"음성 속도가 계속 비정상입니다: {ko}")
+
+
 def assemble(ep_dir, proj, ep, mode):
     """문장마다 따로 생성한 음성을 다듬어(앞뒤 무음 제거, 음량 통일) 이어 붙인다. 문장별 (시작, 끝)을 돌려준다.
-    mode="normal": 보통 속도, 짧은 쉼 / mode="slow": 천천히 또박또박, 따라 말할 쉼.
-    생성된 문장 파일은 ep_dir/tts_<mode>/에 보관해 다시 만들 때 재사용한다(무료 한도 절약)."""
+    mode="normal": 보통 속도, 짧은 쉼 / mode="slow": 같은 음성을 음높이 그대로 느리게(SLOW_TEMPO), 따라 말할 쉼.
+    생성된 문장 파일은 ep_dir/tts_normal/에 보관해 다시 만들 때 재사용한다(무료 한도 절약)."""
     lines, chars = ep["lines"], {c["id"]: c for c in ep["characters"]}
-    cache = os.path.join(ep_dir, f"tts_{mode}")
+    cache = os.path.join(ep_dir, "tts_normal")
     tmp = os.path.join(ep_dir, f"_{mode}")
     os.makedirs(cache, exist_ok=True)
     os.makedirs(tmp, exist_ok=True)
@@ -75,12 +92,11 @@ def assemble(ep_dir, proj, ep, mode):
     for i, ln in enumerate(lines):
         raw = os.path.join(cache, f"l{i}.wav")
         if not os.path.exists(raw):
-            tags = (["slowly and clearly"] if mode == "slow" else []) + ([ln["emotion"]] if ln.get("emotion") else [])
-            text = (f"[{', '.join(tags)}] " if tags else "") + ln["ko"]
-            sh(sys.executable, os.path.join(STUDIO, "tts_line.py"), chars[ln["speaker"]]["voice"], text, raw)
+            make_line(raw, chars[ln["speaker"]]["voice"], ln["ko"])
         piece = os.path.join(tmp, f"l{i}.wav")
         trim = "silenceremove=start_periods=1:start_threshold=-45dB,areverse,silenceremove=start_periods=1:start_threshold=-45dB,areverse"
-        sh("ffmpeg", "-y", "-i", raw, "-af", f"{trim},adelay=80,apad=pad_dur=0.12", "-ar", "24000", "-ac", "1", piece)
+        tempo = f",atempo={SLOW_TEMPO}" if mode == "slow" else ""
+        sh("ffmpeg", "-y", "-i", raw, "-af", f"{trim}{tempo},adelay=80,apad=pad_dur=0.12", "-ar", "24000", "-ac", "1", piece)
         g = max(-6.0, min(9.0, TARGET_DB - mean_db(piece)))
         sh("ffmpeg", "-y", "-i", piece, "-af", f"volume={g:.1f}dB,alimiter=limit=0.95", "-ar", "24000", piece + ".n.wav")
         os.replace(piece + ".n.wav", piece)

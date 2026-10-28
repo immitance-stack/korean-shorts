@@ -58,12 +58,14 @@ ffmpeg -i renders/X.mp4 -c:v libx264 -crf 21 -preset medium -pix_fmt yuv420p -c:
 - AI 사진에 대본과 다른 글자(이름표 등)가 보이면 ffmpeg `drawbox`로 지운다.
 - 같은 주의 2편부터는 1편 ① 사진 노드를 `connect_from`으로 써서 같은 얼굴을 유지한다(1편 episode.json의 `elevenlabs` 기록 참고). 기준 사진을 쓰면 장당 약 918 크레딧.
 - 필요 환경: `GOOGLE_API_KEY`(환경 변수), ffmpeg, Node 22, Chromium(클라우드 기본 설치). 폰트·GSAP은 저장소에 포함(외부 CDN은 렌더러에서 막힘).
-- 음성: Gemini `gemini-3.8-flash-tts`, 문장마다 따로 생성. 감정 지시는 **영어 태그**(`[apologetic]`)로만 — 한국어 태그는 소리 내어 읽어 버린다.
+- 음성: Gemini `gemini-3.8-flash-tts`, 문장마다 따로 생성. **대사 글자만 넣는다. 감정·속도 지시 태그(`[...]`)는 절대 쓰지 않는다** — 한국어든 영어든 소리 내어 읽어 버리는 일이 있었다(사용자 지적: "음성은 한국어만").
+- 느린 구간은 보통 음성을 음높이 그대로 0.75배속(`SLOW_TEMPO`)으로 늘려 만든다(TTS 추가 호출 없음).
+- 보통 음성의 말 속도가 초당 3음절 미만이면 다른 말이 섞인 것으로 보고 자동으로 다시 만든다(`make_line`).
 - 음량은 문장마다 -18dB로 자동 통일.
 
 ### 제작 후 검사 (반드시)
-1. `python3 studio/transcribe.py episodes/.../tts_normal/*.wav episodes/.../tts_slow/*.wav`
-   받아쓰기가 대사와 다르거나 영어 단어(감정 태그)가 들리면 그 문장 wav를 지우고 다시 build.
+1. `python3 studio/transcribe.py episodes/.../tts_normal/*.wav episodes/.../project_en/voice.mp3 episodes/.../project_en/slow.mp3`
+   영어가 들리면 ⚠ 표시와 함께 실패(exit 1). 대사와 다르면 그 문장 wav를 지우고 다시 build.
 2. `hyperframes check` 통과, snapshot 프레임을 직접 열어 자막 잘림·캐릭터 겹침 확인.
 3. 무료 한도(429)나 서버 혼잡(503)이 나면 기다렸다 재시도. 같은 요청을 무한 반복하지 않는다.
    - Gemini 무료 한도는 하루 단위(태평양 시간 자정 = 한국 시간 오후 4~5시 초기화). 그래서 매일 제작은 16:43 KST.
