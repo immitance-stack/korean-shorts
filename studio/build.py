@@ -176,7 +176,7 @@ def build(ep_path, lang):
 
     def subs(prefix, spans, until):
         for i, (l, (a, b)) in enumerate(zip(lines, spans)):
-            end = spans[i + 1][0] - 0.05 if i + 1 < len(spans) else until
+            end = spans[i + 1][0] - 0.2 if i + 1 < len(spans) else until  # 다음 자막이 나오기 전에 사라지게
             c = chars[l["speaker"]]
             size = " long" if len(l["ko"]) > 34 or len(l[lang]) > 85 else ""  # 긴 대사는 글자를 줄여 카드 안에 맞춘다
             html.append(f'''<div id="{prefix}{i}" class="sub{size} clip" data-start="{a - 0.15:.2f}" data-duration="{end - a + 0.15:.2f}" data-layout-allow-overlap>

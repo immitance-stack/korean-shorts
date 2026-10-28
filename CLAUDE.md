@@ -52,7 +52,11 @@ cd ../episodes/<주>/<NN>/project_en
 HYPERFRAMES_SKIP_SKILLS=1 npx -y hyperframes@0.8.191 check     # 오류 0개여야 함
 HYPERFRAMES_SKIP_SKILLS=1 npx -y hyperframes@0.8.191 snapshot --at 3,8,15   # 프레임을 직접 보고 확인
 HYPERFRAMES_SKIP_SKILLS=1 npx -y hyperframes@0.8.191 render    # renders/*.mp4
+# 렌더 결과(약 48MB)를 업로드·전송용으로 압축(약 15MB):
+ffmpeg -i renders/X.mp4 -c:v libx264 -crf 21 -preset medium -pix_fmt yuv420p -c:a aac -b:a 160k -movflags +faststart /home/user/<id>_<lang>.mp4
 ```
+- AI 사진에 대본과 다른 글자(이름표 등)가 보이면 ffmpeg `drawbox`로 지운다.
+- 같은 주의 2편부터는 1편 ① 사진 노드를 `connect_from`으로 써서 같은 얼굴을 유지한다(1편 episode.json의 `elevenlabs` 기록 참고). 기준 사진을 쓰면 장당 약 918 크레딧.
 - 필요 환경: `GOOGLE_API_KEY`(환경 변수), ffmpeg, Node 22, Chromium(클라우드 기본 설치). 폰트·GSAP은 저장소에 포함(외부 CDN은 렌더러에서 막힘).
 - 음성: Gemini `gemini-3.8-flash-tts`, 문장마다 따로 생성. 감정 지시는 **영어 태그**(`[apologetic]`)로만 — 한국어 태그는 소리 내어 읽어 버린다.
 - 음량은 문장마다 -18dB로 자동 통일.
