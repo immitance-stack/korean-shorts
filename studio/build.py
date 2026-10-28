@@ -69,7 +69,7 @@ def make_line(raw, voice, ko, emotion=None):
     """한 문장 음성을 만든다.
     1) 감정 지시 없는 기본 음성(raw 옆 .plain.wav)을 만든다 — 기준 길이이자 예비용.
     2) 감정 지시(영어 태그)를 넣어 만들고, 지시문을 소리 내 읽었는지 검사한다:
-       기본 음성보다 30% + 0.3초 넘게 길거나, '영어가 들리나?' 질문에 YES면 버리고 다시(최대 3번).
+       기본 음성보다 20% + 0.2초 넘게 길거나, '영어가 들리나?' 질문에 YES면 버리고 다시(최대 3번).
     3) 끝까지 실패하면 기본 음성을 쓴다."""
     from transcribe import has_english
     plain = raw[:-4] + ".plain.wav"
@@ -82,7 +82,7 @@ def make_line(raw, voice, ko, emotion=None):
         else:
             raise RuntimeError(f"음성 속도가 계속 비정상입니다: {ko}")
     if emotion:
-        limit = duration(plain) * 1.3 + 0.3
+        limit = duration(plain) * 1.2 + 0.2
         trial = raw[:-4] + ".try.wav"
         for n in range(3):
             sh(sys.executable, os.path.join(STUDIO, "tts_line.py"), voice, f"[{emotion}] {ko}", trial)
