@@ -27,7 +27,7 @@
     {
       "speaker": "minsu",
       "shot": "shotA.png",
-      "emotion": "apologetic, a little hoarse",
+      "emotion": "apologetic, weak and tired, sounding sick with a cold",
       "ko": "사장님, 제가 감기 때문에 오늘은 못 나갈 것 같아요. 죄송합니다.",
       "en": "Boss, I don't think I can come in today because of a cold. I'm sorry.",
       "vi": "Chị chủ ơi, em bị cảm nên chắc hôm nay em không đi làm được. Em xin lỗi ạ.",
@@ -36,7 +36,7 @@
     {
       "speaker": "boss",
       "shot": "shotC.png",
-      "emotion": "warm and reassuring",
+      "emotion": "warm and reassuring, gently worried",
       "ko": "괜찮아요. 그런데 병원에 갔다 왔어요? 다른 사람들도 많이 있으니까 걱정하지 말고 푹 쉬어요.",
       "en": "That's okay. Have you been to the doctor? We have plenty of people here, so don't worry and get plenty of rest.",
       "vi": "Không sao đâu. Mà em đã đi khám chưa? Ở quán còn nhiều người nên em đừng lo, cứ nghỉ ngơi cho khỏe nhé.",
