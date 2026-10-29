@@ -1,6 +1,6 @@
 {
   "id": "2026-W44-02",
-  "status": "script_approved",
+  "status": "awaiting_approval",
   "publish_date": "2026-10-29",
   "style": "photo",
   "cast": "민수: 20대 초반 한국 남성, 짧은 검은 머리, 카페 아르바이트생(근무 중엔 흰 셔츠에 진녹색 앞치마). 사장님: 40대 중반 한국 여성, 어깨 길이 갈색 단발, 베이지 카디건, 작은 동네 카페 사장.",
@@ -60,5 +60,14 @@
   "tiktok_vi": {
     "caption": "Tiếng Hàn: Gọi điện xin nghỉ ốm 📞 Nghe rồi nói theo nhé! #hoctienghan #tienghan #tienghangiaotiep #korean"
   },
-  "uploads": {}
+  "uploads": {},
+  "elevenlabs": {
+    "flow_id": "8lW3v9AFAiYkycYZsR9u",
+    "nodes": {
+      "shotA": "rbDA9Lkxnxb2bKHSeRlB",
+      "shotC": "xSbzL2tW2ITUaDhF4UrY"
+    },
+    "reference": "DVoIOZEV8Qm7O2JKFEVn"
+  },
+  "voice_note": "민수 대사: 감정 음성 6번 모두 길이 검사 탈락 → 기본 음성. 사장님 대사: 감정 음성 사용. 최종 받아쓰기 통과(영어 없음)."
 }
