@@ -1,6 +1,6 @@
 {
   "id": "2026-W44-03",
-  "status": "awaiting_approval",
+  "status": "uploaded",
   "publish_date": "2026-10-30",
   "style": "photo",
   "cast": "민수: 20대 초반 한국 남성, 짧은 검은 머리, 카페 아르바이트생(근무 중엔 흰 셔츠에 진녹색 앞치마). 사장님: 40대 중반 한국 여성, 어깨 길이 갈색 단발, 베이지 카디건, 작은 동네 카페 사장.",
@@ -70,7 +70,12 @@
   "tiktok_vi": {
     "caption": "Tiếng Hàn: Hỏi thăm đã khỏi bệnh chưa 😊 Nghe rồi nói theo nhé! #hoctienghan #tienghan #tienghangiaotiep #korean"
   },
-  "uploads": {},
+  "uploads": {
+    "youtube_en": "https://www.youtube.com/watch?v=IDPm7lQIExQ",
+    "youtube_vi": "https://www.youtube.com/watch?v=unROtiuq1zY",
+    "uploaded_at_kst": "2026-10-30 21:41",
+    "tiktok_vi": "사용자 직접 업로드"
+  },
   "elevenlabs": {
     "flow_id": "8lW3v9AFAiYkycYZsR9u",
     "nodes": {
