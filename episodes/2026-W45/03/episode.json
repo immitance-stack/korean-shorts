@@ -1,0 +1,77 @@
+{
+  "id": "2026-W45-03",
+  "status": "draft",
+  "style": "photo",
+  "cast": "하은: 30대 초반 한국 여성, 긴 검은 머리를 하나로 묶음, 회사원. 준호: 30대 초반 한국 남성, 짧은 검은 머리, 회사원. 두 사람은 직장 동료(존댓말).",
+  "topic": {
+    "ko": "정상에서 기분 말하기",
+    "en": "Talking about how you feel at the summit",
+    "vi": "Nói về cảm giác khi lên đỉnh núi"
+  },
+  "scene": "산 정상",
+  "characters": [
+    {
+      "id": "haeun",
+      "name": "하은",
+      "color": "#d64b72",
+      "voice": "Kore"
+    },
+    {
+      "id": "junho",
+      "name": "준호",
+      "color": "#3f6fd1",
+      "voice": "Charon"
+    }
+  ],
+  "lines": [
+    {
+      "speaker": "haeun",
+      "shot": "shotA.png",
+      "emotion": "relieved and refreshed, a little out of breath from the climb",
+      "emotion_ko": "올라오느라 살짝 숨이 차지만 후련하고 상쾌하게",
+      "ko": "그동안 답답했는데 높은 데 올라오니까 좋네요.",
+      "en": "I've been feeling a bit stifled lately, but it feels great to be up here.",
+      "vi": "Dạo này tôi thấy ngột ngạt lắm, nhưng lên cao thế này thấy dễ chịu quá.",
+      "vi_back_ko": "요즘은 숨이 막힐 것 같았는데, 이렇게 높은 곳에 올라오니 정말 기분이 상쾌하네요."
+    },
+    {
+      "speaker": "junho",
+      "shot": "shotB.png",
+      "emotion": "calm and content, peaceful",
+      "emotion_ko": "차분하고 만족스럽게, 평온하게",
+      "ko": "그렇죠? 그래서 저는 등산이 좋아요. 이렇게 정상에서 멀리 바라보고 있으면 마음이 편해져요.",
+      "en": "Right? That's why I love hiking. When I stand here at the summit and look out into the distance like this, I feel at peace.",
+      "vi": "Đúng không? Vì thế tôi thích leo núi. Đứng trên đỉnh nhìn ra xa thế này, lòng tôi thấy thanh thản.",
+      "vi_back_ko": "그렇죠? 그래서 저는 등산을 좋아해요. 정상에 서서 이렇게 멀리 바라보면 마음이 평온해져요."
+    },
+    {
+      "speaker": "haeun",
+      "shot": "shotC.png",
+      "emotion": "cheerful and happy, still a bit tired from the climb",
+      "emotion_ko": "올라온 피곤함이 조금 남았지만 밝고 행복하게",
+      "ko": "맞아요. 우리 이제 자주 와요.",
+      "en": "That's right. Let's come here often from now on.",
+      "vi": "Đúng vậy. Từ giờ chúng ta hãy thường xuyên đến đây nhé.",
+      "vi_back_ko": "맞아요. 이제부터 자주 여기 오자요."
+    }
+  ],
+  "shots": {
+    "shotA": "맑은 날 산 정상. 하은과 준호가 나란히 서서 멀리 풍경을 바라봄 (투샷)",
+    "shotB": "준호 클로즈업. 먼 곳을 바라보며 편안한 표정",
+    "shotC": "하은 클로즈업. 밝게 웃는 얼굴"
+  },
+  "youtube": {
+    "en": {
+      "title": "Korean Conversation: Hiking Makes Me Happy ⛰️ #shorts",
+      "description": "Today's Korean: 정상에서 기분 말하기 (Talking about how you feel at the summit)\n\n하은: 그동안 답답했는데 높은 데 올라오니까 좋네요.\n준호: 그렇죠? 그래서 저는 등산이 좋아요. 이렇게 정상에서 멀리 바라보고 있으면 마음이 편해져요.\n하은: 맞아요. 우리 이제 자주 와요.\n\nListen, then repeat slowly! #LearnKorean #KoreanConversation #Korean #shorts\n\nVoices and images were created with AI."
+    },
+    "vi": {
+      "title": "Hội thoại tiếng Hàn: Lên đỉnh núi thật sảng khoái ⛰️ #shorts",
+      "description": "Tiếng Hàn hôm nay: 정상에서 기분 말하기 (Nói về cảm giác khi lên đỉnh núi)\n\n하은: 그동안 답답했는데 높은 데 올라오니까 좋네요.\n준호: 그렇죠? 그래서 저는 등산이 좋아요. 이렇게 정상에서 멀리 바라보고 있으면 마음이 편해져요.\n하은: 맞아요. 우리 이제 자주 와요.\n\nNghe rồi nói theo nhé! #HocTiengHan #TiengHan #shorts\n\nGiọng nói và hình ảnh được tạo bằng AI."
+    }
+  },
+  "tiktok_vi": {
+    "caption": "Tiếng Hàn: Lên đỉnh núi thật sảng khoái ⛰️ Nghe rồi nói theo nhé! #hoctienghan #tienghan #tienghangiaotiep #korean"
+  },
+  "uploads": {}
+}

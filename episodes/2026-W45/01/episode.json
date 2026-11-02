@@ -1,0 +1,97 @@
+{
+  "id": "2026-W45-01",
+  "status": "draft",
+  "style": "photo",
+  "cast": "하은: 30대 초반 한국 여성, 긴 검은 머리를 하나로 묶음, 회사원. 준호: 30대 초반 한국 남성, 짧은 검은 머리, 회사원. 두 사람은 직장 동료(존댓말).",
+  "topic": {
+    "ko": "등산 가자고 제안하기",
+    "en": "Inviting someone to go hiking",
+    "vi": "Rủ ai đó đi leo núi"
+  },
+  "scene": "점심시간 회사 휴게실",
+  "characters": [
+    {
+      "id": "haeun",
+      "name": "하은",
+      "color": "#d64b72",
+      "voice": "Kore"
+    },
+    {
+      "id": "junho",
+      "name": "준호",
+      "color": "#3f6fd1",
+      "voice": "Charon"
+    }
+  ],
+  "lines": [
+    {
+      "speaker": "junho",
+      "shot": "shotA.png",
+      "emotion": "friendly and casually curious",
+      "emotion_ko": "친근하고 가볍게 물어보며",
+      "ko": "하은 씨, 이번 주말에 뭐 해요?",
+      "en": "Ha-eun, what are you doing this weekend?",
+      "vi": "Ha-eun ơi, cuối tuần này bạn có dự định gì không?",
+      "vi_back_ko": "하은아, 이번 주말에 뭐 할 계획 있어?"
+    },
+    {
+      "speaker": "haeun",
+      "shot": "shotC.png",
+      "emotion": "relaxed and a little curious",
+      "emotion_ko": "느긋하고 조금 궁금해하며",
+      "ko": "아직 계획이 없어요. 왜요?",
+      "en": "I don't have any plans yet. Why?",
+      "vi": "Tôi vẫn chưa có kế hoạch gì. Sao vậy?",
+      "vi_back_ko": "아직 별다른 계획이 없어요. 왜요?"
+    },
+    {
+      "speaker": "junho",
+      "shot": "shotB.png",
+      "emotion": "hopeful and cheerful, a little shy about asking",
+      "emotion_ko": "기대하며 밝게, 부탁하기가 살짝 수줍게",
+      "ko": "저랑 같이 등산 갈래요?",
+      "en": "Would you like to go hiking with me?",
+      "vi": "Bạn có muốn đi leo núi cùng tôi không?",
+      "vi_back_ko": "저랑 같이 등산하러 갈래요?"
+    },
+    {
+      "speaker": "haeun",
+      "shot": "shotC.png",
+      "emotion": "happy but a little unsure and shy about her hiking skills",
+      "emotion_ko": "기쁘지만 자신이 없어서 조금 쑥스럽게",
+      "ko": "좋아요! 그런데 저는 등산을 잘 못해요.",
+      "en": "Great! But I'm not very good at hiking.",
+      "vi": "Được thôi! Nhưng tôi leo núi không giỏi lắm.",
+      "vi_back_ko": "좋아요! 하지만 저는 등산을 잘 못해요."
+    },
+    {
+      "speaker": "junho",
+      "shot": "shotB.png",
+      "emotion": "reassuring and warm, encouraging",
+      "emotion_ko": "안심시키듯 따뜻하게 격려하며",
+      "ko": "걱정하지 마요. 천천히 올라가면 돼요.",
+      "en": "Don't worry. Just take it slow.",
+      "vi": "Đừng lo. Chỉ cần leo từ từ là được.",
+      "vi_back_ko": "걱정하지 마세요. 천천히 올라가기만 하면 됩니다."
+    }
+  ],
+  "shots": {
+    "shotA": "점심시간 회사 휴게실. 준호가 하은에게 말을 걸고 하은이 돌아봄 (투샷)",
+    "shotB": "준호 클로즈업. 밝게 웃으며 등산을 제안",
+    "shotC": "하은 클로즈업. 기뻐하지만 살짝 수줍은 표정"
+  },
+  "youtube": {
+    "en": {
+      "title": "Korean Conversation: Let's Go Hiking! ⛰️ #shorts",
+      "description": "Today's Korean: 등산 가자고 제안하기 (Inviting someone to go hiking)\n\n준호: 하은 씨, 이번 주말에 뭐 해요?\n하은: 아직 계획이 없어요. 왜요?\n준호: 저랑 같이 등산 갈래요?\n하은: 좋아요! 그런데 저는 등산을 잘 못해요.\n준호: 걱정하지 마요. 천천히 올라가면 돼요.\n\nListen, then repeat slowly! #LearnKorean #KoreanConversation #Korean #shorts\n\nVoices and images were created with AI."
+    },
+    "vi": {
+      "title": "Hội thoại tiếng Hàn: Rủ nhau đi leo núi ⛰️ #shorts",
+      "description": "Tiếng Hàn hôm nay: 등산 가자고 제안하기 (Rủ ai đó đi leo núi)\n\n준호: 하은 씨, 이번 주말에 뭐 해요?\n하은: 아직 계획이 없어요. 왜요?\n준호: 저랑 같이 등산 갈래요?\n하은: 좋아요! 그런데 저는 등산을 잘 못해요.\n준호: 걱정하지 마요. 천천히 올라가면 돼요.\n\nNghe rồi nói theo nhé! #HocTiengHan #TiengHan #shorts\n\nGiọng nói và hình ảnh được tạo bằng AI."
+    }
+  },
+  "tiktok_vi": {
+    "caption": "Tiếng Hàn: Rủ nhau đi leo núi ⛰️ Nghe rồi nói theo nhé! #hoctienghan #tienghan #tienghangiaotiep #korean"
+  },
+  "uploads": {}
+}
