@@ -1,6 +1,6 @@
 {
   "id": "2026-W44-03",
-  "status": "script_approved",
+  "status": "uploaded",
   "publish_date": "2026-10-30",
   "style": "photo",
   "cast": "민수: 20대 초반 한국 남성, 짧은 검은 머리, 카페 아르바이트생(근무 중엔 흰 셔츠에 진녹색 앞치마). 사장님: 40대 중반 한국 여성, 어깨 길이 갈색 단발, 베이지 카디건, 작은 동네 카페 사장.",
@@ -70,8 +70,12 @@
   "tiktok_vi": {
     "caption": "Tiếng Hàn: Hỏi thăm đã khỏi bệnh chưa 😊 Nghe rồi nói theo nhé! #hoctienghan #tienghan #tienghangiaotiep #korean"
   },
-  "uploads": {},
-  "blocked": "2026-10-31 16:44 KST: ElevenLabs 월 크레딧 소진 상태. Cloudflare Workers AI는 토큰·접속 정상이나 '하루 무료 10,000 neurons 소진(code 4006)'으로 거절됨(UTC 00:00 = KST 09:00 초기화). 사용자 결정 대기: Cloudflare 내일 오전 재시도 / Google 결제 등록 / ElevenLabs 크레딧 초기화 대기.",
+  "uploads": {
+    "youtube_en": "https://www.youtube.com/watch?v=IDPm7lQIExQ",
+    "youtube_vi": "https://www.youtube.com/watch?v=unROtiuq1zY",
+    "uploaded_at_kst": "2026-10-30 21:41",
+    "tiktok_vi": "사용자 직접 업로드"
+  },
   "elevenlabs": {
     "flow_id": "8lW3v9AFAiYkycYZsR9u",
     "nodes": {
@@ -80,5 +84,11 @@
       "shotC": "lS5Wa2PycCaJZzQoKoxu"
     },
     "reference": "DVoIOZEV8Qm7O2JKFEVn"
+  },
+  "cloudflare": {
+    "model": "@cf/black-forest-labs/flux-2-dev",
+    "shotA": "W44-01 shotA를 기준으로 편집(같은 얼굴)",
+    "shotB": "shotA 기준 민수 클로즈업",
+    "shotC": "shotA 기준 사장님 클로즈업"
   }
 }
