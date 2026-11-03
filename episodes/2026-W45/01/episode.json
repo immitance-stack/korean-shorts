@@ -1,8 +1,8 @@
 {
   "id": "2026-W45-01",
-  "status": "script_approved",
+  "status": "awaiting_approval",
   "style": "photo",
-  "cast": "하은: 30대 초반 한국 여성, 긴 검은 머리를 하나로 묶음, 회사원. 준호: 30대 초반 한국 남성, 짧은 검은 머리, 회사원. 두 사람은 직장 동료(존댓말).",
+  "cast": "지수: 30대 초반 한국 여성, 긴 검은 머리를 하나로 묶음, 회사원. 준호: 30대 초반 한국 남성, 짧은 검은 머리, 회사원. 두 사람은 직장 동료(존댓말).",
   "topic": {
     "ko": "등산 가자고 제안하기",
     "en": "Inviting someone to go hiking",
@@ -11,8 +11,8 @@
   "scene": "점심시간 회사 휴게실",
   "characters": [
     {
-      "id": "haeun",
-      "name": "하은",
+      "id": "jisu",
+      "name": "지수",
       "color": "#d64b72",
       "voice": "Kore"
     },
@@ -29,13 +29,13 @@
       "shot": "shotA.png",
       "emotion": "friendly and casually curious",
       "emotion_ko": "친근하고 가볍게 물어보며",
-      "ko": "하은 씨, 이번 주말에 뭐 해요?",
-      "en": "Ha-eun, what are you doing this weekend?",
-      "vi": "Ha-eun ơi, cuối tuần này bạn có dự định gì không?",
-      "vi_back_ko": "하은아, 이번 주말에 뭐 할 계획 있어?"
+      "ko": "지수 씨, 이번 주말에 뭐 해요?",
+      "en": "Ji-su, what are you doing this weekend?",
+      "vi": "Ji-su ơi, cuối tuần này bạn có dự định gì không?",
+      "vi_back_ko": "지수아, 이번 주말에 뭐 할 계획 있어?"
     },
     {
-      "speaker": "haeun",
+      "speaker": "jisu",
       "shot": "shotC.png",
       "emotion": "relaxed and a little curious",
       "emotion_ko": "느긋하고 조금 궁금해하며",
@@ -55,7 +55,7 @@
       "vi_back_ko": "저랑 같이 등산하러 갈래요?"
     },
     {
-      "speaker": "haeun",
+      "speaker": "jisu",
       "shot": "shotC.png",
       "emotion": "happy but a little unsure and shy about her hiking skills",
       "emotion_ko": "기쁘지만 자신이 없어서 조금 쑥스럽게",
@@ -76,23 +76,30 @@
     }
   ],
   "shots": {
-    "shotA": "점심시간 회사 휴게실. 준호가 하은에게 말을 걸고 하은이 돌아봄 (투샷)",
+    "shotA": "점심시간 회사 휴게실. 준호가 지수에게 말을 걸고 지수이 돌아봄 (투샷)",
     "shotB": "준호 클로즈업. 밝게 웃으며 등산을 제안",
-    "shotC": "하은 클로즈업. 기뻐하지만 살짝 수줍은 표정"
+    "shotC": "지수 클로즈업. 기뻐하지만 살짝 수줍은 표정"
   },
   "youtube": {
     "en": {
       "title": "Korean Conversation: Let's Go Hiking! ⛰️ #shorts",
-      "description": "Today's Korean: 등산 가자고 제안하기 (Inviting someone to go hiking)\n\n준호: 하은 씨, 이번 주말에 뭐 해요?\n하은: 아직 계획이 없어요. 왜요?\n준호: 저랑 같이 등산 갈래요?\n하은: 좋아요! 그런데 저는 등산을 잘 못해요.\n준호: 걱정하지 마요. 천천히 올라가면 돼요.\n\nListen, then repeat slowly! #LearnKorean #KoreanConversation #Korean #shorts\n\nVoices and images were created with AI."
+      "description": "Today's Korean: 등산 가자고 제안하기 (Inviting someone to go hiking)\n\n준호: 지수 씨, 이번 주말에 뭐 해요?\n지수: 아직 계획이 없어요. 왜요?\n준호: 저랑 같이 등산 갈래요?\n지수: 좋아요! 그런데 저는 등산을 잘 못해요.\n준호: 걱정하지 마요. 천천히 올라가면 돼요.\n\nListen, then repeat slowly! #LearnKorean #KoreanConversation #Korean #shorts\n\nVoices and images were created with AI."
     },
     "vi": {
       "title": "Hội thoại tiếng Hàn: Rủ nhau đi leo núi ⛰️ #shorts",
-      "description": "Tiếng Hàn hôm nay: 등산 가자고 제안하기 (Rủ ai đó đi leo núi)\n\n준호: 하은 씨, 이번 주말에 뭐 해요?\n하은: 아직 계획이 없어요. 왜요?\n준호: 저랑 같이 등산 갈래요?\n하은: 좋아요! 그런데 저는 등산을 잘 못해요.\n준호: 걱정하지 마요. 천천히 올라가면 돼요.\n\nNghe rồi nói theo nhé! #HocTiengHan #TiengHan #shorts\n\nGiọng nói và hình ảnh được tạo bằng AI."
+      "description": "Tiếng Hàn hôm nay: 등산 가자고 제안하기 (Rủ ai đó đi leo núi)\n\n준호: 지수 씨, 이번 주말에 뭐 해요?\n지수: 아직 계획이 없어요. 왜요?\n준호: 저랑 같이 등산 갈래요?\n지수: 좋아요! 그런데 저는 등산을 잘 못해요.\n준호: 걱정하지 마요. 천천히 올라가면 돼요.\n\nNghe rồi nói theo nhé! #HocTiengHan #TiengHan #shorts\n\nGiọng nói và hình ảnh được tạo bằng AI."
     }
   },
   "tiktok_vi": {
     "caption": "Tiếng Hàn: Rủ nhau đi leo núi ⛰️ Nghe rồi nói theo nhé! #hoctienghan #tienghan #tienghangiaotiep #korean"
   },
   "uploads": {},
-  "publish_date": "2026-11-03"
+  "publish_date": "2026-11-03",
+  "cloudflare": {
+    "model": "@cf/black-forest-labs/flux-2-dev",
+    "shotA": "텍스트 프롬프트로 생성(이번 주 기준 사진)",
+    "shotB": "shotA 기준 준호 클로즈업",
+    "shotC": "shotA 기준 지수 클로즈업"
+  },
+  "note": "등장인물 이름 '하은'은 TTS·받아쓰기에서 발음이 불분명해 '지수'로 변경(2026-11-03)."
 }

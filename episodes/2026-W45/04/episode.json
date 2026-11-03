@@ -2,7 +2,7 @@
   "id": "2026-W45-04",
   "status": "script_approved",
   "style": "photo",
-  "cast": "하은: 30대 초반 한국 여성, 긴 검은 머리를 하나로 묶음, 회사원. 준호: 30대 초반 한국 남성, 짧은 검은 머리, 회사원. 두 사람은 직장 동료(존댓말).",
+  "cast": "지수: 30대 초반 한국 여성, 긴 검은 머리를 하나로 묶음, 회사원. 준호: 30대 초반 한국 남성, 짧은 검은 머리, 회사원. 두 사람은 직장 동료(존댓말).",
   "topic": {
     "ko": "하루 소감 말하고 약속하기",
     "en": "Sharing your day and making plans",
@@ -11,8 +11,8 @@
   "scene": "등산로 입구 벤치",
   "characters": [
     {
-      "id": "haeun",
-      "name": "하은",
+      "id": "jisu",
+      "name": "지수",
       "color": "#d64b72",
       "voice": "Kore"
     },
@@ -35,7 +35,7 @@
       "vi_back_ko": "오늘 등산은 어땠어요? 꽤 힘들었겠죠?"
     },
     {
-      "speaker": "haeun",
+      "speaker": "jisu",
       "shot": "shotC.png",
       "emotion": "tired but satisfied and happy",
       "emotion_ko": "피곤하지만 뿌듯하고 행복하게",
@@ -55,7 +55,7 @@
       "vi_back_ko": "그럼 다음에는 다른 산에 가볼까?"
     },
     {
-      "speaker": "haeun",
+      "speaker": "jisu",
       "shot": "shotC.png",
       "emotion": "delighted and playful, still a little tired",
       "emotion_ko": "아직 조금 지쳤지만 기쁘고 장난스럽게",
@@ -76,18 +76,18 @@
     }
   ],
   "shots": {
-    "shotA": "하산 후 등산로 입구 벤치. 지친 하은과 준호가 웃으며 앉아 있음 (투샷)",
+    "shotA": "하산 후 등산로 입구 벤치. 지친 지수과 준호가 웃으며 앉아 있음 (투샷)",
     "shotB": "준호 클로즈업. 설레며 웃는 얼굴",
-    "shotC": "하은 클로즈업. 피곤하지만 뿌듯하게 웃는 얼굴"
+    "shotC": "지수 클로즈업. 피곤하지만 뿌듯하게 웃는 얼굴"
   },
   "youtube": {
     "en": {
       "title": "Korean Conversation: Let's Hike Again! 🍙 #shorts",
-      "description": "Today's Korean: 하루 소감 말하고 약속하기 (Sharing your day and making plans)\n\n준호: 오늘 등산 어땠어요? 많이 힘들었죠?\n하은: 힘들었지만 정말 좋았어요.\n준호: 그럼 다음에는 다른 산에 가 볼까요?\n하은: 좋아요! 그때는 제가 김밥을 싸 올게요.\n준호: 와, 정말요? 벌써 기대돼요!\n\nListen, then repeat slowly! #LearnKorean #KoreanConversation #Korean #shorts\n\nVoices and images were created with AI."
+      "description": "Today's Korean: 하루 소감 말하고 약속하기 (Sharing your day and making plans)\n\n준호: 오늘 등산 어땠어요? 많이 힘들었죠?\n지수: 힘들었지만 정말 좋았어요.\n준호: 그럼 다음에는 다른 산에 가 볼까요?\n지수: 좋아요! 그때는 제가 김밥을 싸 올게요.\n준호: 와, 정말요? 벌써 기대돼요!\n\nListen, then repeat slowly! #LearnKorean #KoreanConversation #Korean #shorts\n\nVoices and images were created with AI."
     },
     "vi": {
       "title": "Hội thoại tiếng Hàn: Lần sau đi leo núi tiếp nhé! 🍙 #shorts",
-      "description": "Tiếng Hàn hôm nay: 하루 소감 말하고 약속하기 (Chia sẻ cảm nhận và hẹn lần sau)\n\n준호: 오늘 등산 어땠어요? 많이 힘들었죠?\n하은: 힘들었지만 정말 좋았어요.\n준호: 그럼 다음에는 다른 산에 가 볼까요?\n하은: 좋아요! 그때는 제가 김밥을 싸 올게요.\n준호: 와, 정말요? 벌써 기대돼요!\n\nNghe rồi nói theo nhé! #HocTiengHan #TiengHan #shorts\n\nGiọng nói và hình ảnh được tạo bằng AI."
+      "description": "Tiếng Hàn hôm nay: 하루 소감 말하고 약속하기 (Chia sẻ cảm nhận và hẹn lần sau)\n\n준호: 오늘 등산 어땠어요? 많이 힘들었죠?\n지수: 힘들었지만 정말 좋았어요.\n준호: 그럼 다음에는 다른 산에 가 볼까요?\n지수: 좋아요! 그때는 제가 김밥을 싸 올게요.\n준호: 와, 정말요? 벌써 기대돼요!\n\nNghe rồi nói theo nhé! #HocTiengHan #TiengHan #shorts\n\nGiọng nói và hình ảnh được tạo bằng AI."
     }
   },
   "tiktok_vi": {
