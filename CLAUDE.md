@@ -44,6 +44,7 @@
 - 프롬프트 요령: "A photorealistic film still, vertical 9:16" + 인물(나이·머리·옷) + 장소·시간 + 얼굴은 화면 가운데(아래 30%는 자막 카드가 가림) + "Shot on 35mm/85mm lens, natural skin texture, subtle film grain. No text, no watermark."
 - **대안: Cloudflare Workers AI** (ElevenLabs 크레딧이 없을 때, W44-03부터 사용)
   - `bash studio/cf_image.sh <out.png> "<prompt>" [기준사진...]` (모델 `flux-2-dev`, 1080×1920). 필요: `CF_API_TOKEN`, `CF_ACCOUNT_ID`(32자, 이메일 아님).
+  - 계정이 하나 더 있으면 환경 변수 `CF_ACCOUNT_ID_2`, `CF_API_TOKEN_2`를 넣는다. 첫 계정의 하루 무료 한도(429, code 4006)가 차면 스크립트가 자동으로 두 번째 계정으로 넘어간다. 한도는 계정마다 따로이며 한국 시간 오전 9시에 초기화된다.
   - 같은 얼굴 유지: 앞 편 ① 사진 **전체**를 기준으로 넣고 "Edit this photo. Keep exactly the same two people ... (바뀐 자세·표정)"으로 쓴다. 얼굴만 잘라 넣으면 그 얼굴을 그대로 키운 사진이 나온다.
   - ②③ 클로즈업은 새 ① 사진을 기준으로 "Using the reference image: a close-up portrait of the same ..."
 - episode.json의 각 대사에 `"shot": "shotA.png"` 지정. 사진이 1장뿐이면 `"focus": {"x":0.66,"y":0.47,"zoom":1.9}`로 얼굴 확대(가상 클로즈업).

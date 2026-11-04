@@ -5,15 +5,22 @@
 set -e
 OUT=$1; PROMPT=$2; shift 2
 : "${CF_ACCOUNT_ID:?CF_ACCOUNT_ID 필요}" "${CF_API_TOKEN:?CF_API_TOKEN 필요}"
+# 계정이 하나 더 있으면(CF_ACCOUNT_ID_2, CF_API_TOKEN_2) 첫 계정의 하루 무료 한도(code 4006)가 찼을 때 그 계정으로 넘어간다.
 TMP=$(mktemp -d); trap 'rm -rf "$TMP"' EXIT
 args=(); i=0
 for r in "$@"; do
   ffmpeg -v error -y -i "$r" -vf "scale='min(1024,iw)':'min(1024,ih)':force_original_aspect_ratio=decrease" "$TMP/ref$i.jpg"
   args+=(-F "input_image_$i=@$TMP/ref$i.jpg"); i=$((i+1))
 done
-code=$(curl -sS -o "$TMP/resp.json" -w "%{http_code}" -X POST \
-  "https://api.cloudflare.com/client/v4/accounts/$CF_ACCOUNT_ID/ai/run/@cf/black-forest-labs/flux-2-dev" \
-  -H "Authorization: Bearer $CF_API_TOKEN" -F "prompt=$PROMPT" "${args[@]}" -F width=1080 -F height=1920 -F steps=28)
+accts=("$CF_ACCOUNT_ID|$CF_API_TOKEN")
+[ -n "${CF_ACCOUNT_ID_2:-}" ] && [ -n "${CF_API_TOKEN_2:-}" ] && accts+=("$CF_ACCOUNT_ID_2|$CF_API_TOKEN_2")
+for a in "${accts[@]}"; do
+  code=$(curl -sS -o "$TMP/resp.json" -w "%{http_code}" -X POST \
+    "https://api.cloudflare.com/client/v4/accounts/${a%%|*}/ai/run/@cf/black-forest-labs/flux-2-dev" \
+    -H "Authorization: Bearer ${a#*|}" -F "prompt=$PROMPT" "${args[@]}" -F width=1080 -F height=1920 -F steps=28)
+  [ "$code" != "429" ] && break
+  echo "계정 한도 소진(429), 다음 계정으로 시도" >&2
+done
 python3 - "$TMP/resp.json" "$TMP/img.jpg" "$code" <<'PY'
 import json, base64, sys
 d = json.load(open(sys.argv[1]))
