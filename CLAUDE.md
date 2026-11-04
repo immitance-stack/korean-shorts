@@ -62,6 +62,7 @@ ffmpeg -i renders/X.mp4 -c:v libx264 -crf 21 -preset medium -pix_fmt yuv420p -c:
 ```
 - AI 사진에 대본과 다른 글자(이름표 등)가 보이면 ffmpeg `drawbox`로 지운다.
 - 같은 주의 2편부터는 1편 ① 사진 노드를 `connect_from`으로 써서 같은 얼굴을 유지한다(1편 episode.json의 `elevenlabs` 기록 참고). 기준 사진을 쓰면 장당 약 918 크레딧.
+- Gemini 키가 하나 더 있으면(다른 계정) 환경 변수 `GOOGLE_API_KEY_2`에 넣는다. `studio/gemini_keys.py`가 두 키를 읽고, 음성(`tts_line.py`)·받아쓰기(`transcribe.py`)가 첫 키의 하루 무료 한도(429)에 걸리면 두 번째 키로 넘어간다. 한도는 키가 아니라 프로젝트(계정)마다 따로 센다.
 - 필요 환경: `GOOGLE_API_KEY`(환경 변수), ffmpeg, Node 22, Chromium(클라우드 기본 설치). 폰트·GSAP은 저장소에 포함(외부 CDN은 렌더러에서 막힘).
 - 음성: Gemini `gemini-3.8-flash-tts`, 문장마다 따로 생성. **음성에는 한국어만 들어가야 한다**(사용자 요구). 사용자는 감정 지시가 있는 쪽을 더 좋아한다.
   그래서 `make_line`이 ① 지시 없는 기본 음성(`l*.plain.wav`)을 먼저 만들고 ② 영어 감정 태그(`[concerned]`)를 넣은 음성을 만든 뒤,
