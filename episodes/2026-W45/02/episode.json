@@ -95,5 +95,11 @@
   },
   "uploads": {},
   "publish_date": "2026-11-04",
-  "blocked": "2026-11-04 16:50 KST: 사진 생성 불가. Cloudflare 하루 무료 한도 소진(code 4006, KST 09:00 초기화), ElevenLabs 월 크레딧 0. 사용자 결정 대기."
+  "cloudflare": {
+    "model": "@cf/black-forest-labs/flux-2-dev",
+    "shotA": "1편 shotA를 기준으로 편집(같은 두 사람, 등산복)",
+    "shotB": "shotA 기준 준호 클로즈업",
+    "shotC": "shotA 기준 지수 클로즈업"
+  },
+  "note": "2026-11-04 22:40 KST: 사진 3장 완성. Gemini TTS 하루 무료 한도(429)로 1~3번 대사까지만 음성 생성(tts_normal 캐시). 4·5번 대사 음성부터 이어서 build 하면 됨(한국 시간 17:00 이후)."
 }
