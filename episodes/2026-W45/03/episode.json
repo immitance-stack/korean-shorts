@@ -1,6 +1,6 @@
 {
   "id": "2026-W45-03",
-  "status": "script_approved",
+  "status": "awaiting_approval",
   "style": "photo",
   "cast": "지수: 30대 초반 한국 여성, 긴 검은 머리를 하나로 묶음, 회사원. 준호: 30대 초반 한국 남성, 짧은 검은 머리, 회사원. 두 사람은 직장 동료(존댓말).",
   "topic": {
@@ -74,5 +74,12 @@
     "caption": "Tiếng Hàn: Lên đỉnh núi thật sảng khoái ⛰️ Nghe rồi nói theo nhé! #hoctienghan #tienghan #tienghangiaotiep #korean"
   },
   "uploads": {},
-  "publish_date": "2026-11-05"
+  "publish_date": "2026-11-05",
+  "cloudflare": {
+    "model": "@cf/black-forest-labs/flux-2-dev",
+    "shotA": "2편 shotA를 기준으로 편집(같은 두 사람, 정상 장면). 첫 시도 사진의 표지석 글자가 이상해 다시 생성",
+    "shotB": "shotA 기준 준호 클로즈업",
+    "shotC": "shotA 기준 지수 클로즈업"
+  },
+  "note": "2026-11-05 KST: 제작 완료. 1번 대사는 감정 음성이 기본 음성보다 길어 기본 음성 사용. 받아쓰기·영어 검사 통과(영어 없음). 사진은 Cloudflare 두 번째 계정으로 생성."
 }
