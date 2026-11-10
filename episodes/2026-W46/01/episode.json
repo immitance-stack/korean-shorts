@@ -1,0 +1,97 @@
+{
+  "id": "2026-W46-01",
+  "status": "draft",
+  "style": "photo",
+  "cast": "유진: 30대 중반 한국 여성, 어깨 길이의 부드러운 갈색 웨이브 머리, 크림색 니트. 동현: 30대 중반 한국 남성, 짧은 검은 머리에 가는 테 안경, 회색 가디건. 이사 온 새 집에서 함께 사는 부부(반말).",
+  "topic": {
+    "ko": "집이 허전하다고 말하기",
+    "en": "Saying a place feels empty",
+    "vi": "Nói về cảm giác nhà trống trải"
+  },
+  "scene": "새 집 거실",
+  "characters": [
+    {
+      "id": "yujin",
+      "name": "유진",
+      "color": "#d64b72",
+      "voice": "Kore"
+    },
+    {
+      "id": "donghyun",
+      "name": "동현",
+      "color": "#3f6fd1",
+      "voice": "Charon"
+    }
+  ],
+  "lines": [
+    {
+      "speaker": "yujin",
+      "shot": "shotC.png",
+      "emotion": "casually musing, a little wistful as she looks around the big empty room",
+      "emotion_ko": "넓은 빈 거실을 둘러보며 조금 허전한 듯 혼잣말처럼",
+      "ko": "이사하고 나니까 거실이 너무 넓어 보여.",
+      "en": "Now that we've moved, the living room looks so spacious.",
+      "vi": "Chuyển nhà xong, em thấy phòng khách rộng quá.",
+      "vi_back_ko": "이사를 마치고 나니 거실이 너무 넓게 느껴졌어요."
+    },
+    {
+      "speaker": "donghyun",
+      "shot": "shotB.png",
+      "emotion": "easygoing and agreeing, thoughtful",
+      "emotion_ko": "느긋하게 맞장구치며 생각하듯",
+      "ko": "그러네. 뭘 좀 놓으면 좋을 것 같아.",
+      "en": "That's true. I think it would be good to put something there.",
+      "vi": "Ừ nhỉ. Anh nghĩ đặt thêm thứ gì đó thì sẽ đẹp hơn.",
+      "vi_back_ko": "그렇구나. 뭔가 더 추가하면 더 예쁠 것 같아."
+    },
+    {
+      "speaker": "yujin",
+      "shot": "shotC.png",
+      "emotion": "brightly suggesting, hopeful",
+      "emotion_ko": "밝게 제안하며 기대하는 듯",
+      "ko": "화분을 몇 개 사 오면 어때?",
+      "en": "How about buying a few potted plants?",
+      "vi": "Hay mình mua vài chậu cây về nhé?",
+      "vi_back_ko": "그럼 화분 몇 개 사올까?"
+    },
+    {
+      "speaker": "donghyun",
+      "shot": "shotB.png",
+      "emotion": "warm and pleased, supportive",
+      "emotion_ko": "반기며 따뜻하게",
+      "ko": "좋은 생각이야. 같이 꽃집에 가 보자.",
+      "en": "That's a great idea. Let's go to the flower shop together.",
+      "vi": "Ý hay đấy. Mình cùng đi tiệm hoa nhé.",
+      "vi_back_ko": "좋은 생각이네. 같이 꽃집에 가자."
+    },
+    {
+      "speaker": "yujin",
+      "shot": "shotA.png",
+      "emotion": "cheerful and excited",
+      "emotion_ko": "신이 나서 밝게",
+      "ko": "응, 이번 주말에 같이 가자!",
+      "en": "Yeah, let's go together this weekend!",
+      "vi": "Ừ, cuối tuần này mình đi cùng nhau nhé!",
+      "vi_back_ko": "그래, 이번 주말에 같이 가자!"
+    }
+  ],
+  "shots": {
+    "shotA": "이사 온 날 아직 휑한 넓은 거실. 유진과 동현이 나란히 서서 거실을 둘러봄 (투샷)",
+    "shotB": "동현 클로즈업. 생각하듯 거실을 보며 맞장구",
+    "shotC": "유진 클로즈업. 빈 거실을 보며 허전한 듯하다가 밝게 제안"
+  },
+  "youtube": {
+    "en": {
+      "title": "Korean Conversation: The Living Room Feels Empty 🪴 #shorts",
+      "description": "Today's Korean: 집이 허전하다고 말하기 (Saying a place feels empty)\n\n유진: 이사하고 나니까 거실이 너무 넓어 보여.\n동현: 그러네. 뭘 좀 놓으면 좋을 것 같아.\n유진: 화분을 몇 개 사 오면 어때?\n동현: 좋은 생각이야. 같이 꽃집에 가 보자.\n유진: 응, 이번 주말에 같이 가자!\n\nListen, then repeat slowly! #LearnKorean #KoreanConversation #Korean #shorts\n\nVoices and images were created with AI."
+    },
+    "vi": {
+      "title": "Hội thoại tiếng Hàn: Phòng khách trống trải quá 🪴 #shorts",
+      "description": "Tiếng Hàn hôm nay: 집이 허전하다고 말하기 (Nói về cảm giác nhà trống trải)\n\n유진: 이사하고 나니까 거실이 너무 넓어 보여.\n동현: 그러네. 뭘 좀 놓으면 좋을 것 같아.\n유진: 화분을 몇 개 사 오면 어때?\n동현: 좋은 생각이야. 같이 꽃집에 가 보자.\n유진: 응, 이번 주말에 같이 가자!\n\nNghe rồi nói theo nhé! #HocTiengHan #TiengHan #shorts\n\nGiọng nói và hình ảnh được tạo bằng AI."
+    }
+  },
+  "tiktok_vi": {
+    "caption": "Tiếng Hàn: Phòng khách trống trải quá 🪴 Nghe rồi nói theo nhé! #hoctienghan #tienghan #tienghangiaotiep #korean"
+  },
+  "uploads": {}
+}

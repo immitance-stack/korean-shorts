@@ -1,0 +1,97 @@
+{
+  "id": "2026-W46-03",
+  "status": "draft",
+  "style": "photo",
+  "cast": "유진: 30대 중반 한국 여성, 어깨 길이의 부드러운 갈색 웨이브 머리, 크림색 니트. 동현: 30대 중반 한국 남성, 짧은 검은 머리에 가는 테 안경, 회색 가디건. 이사 온 새 집에서 함께 사는 부부(반말).",
+  "topic": {
+    "ko": "조심스럽게 불편함 말하기",
+    "en": "Politely saying something is inconvenient",
+    "vi": "Nói khéo về điều bất tiện"
+  },
+  "scene": "화분이 놓인 거실",
+  "characters": [
+    {
+      "id": "yujin",
+      "name": "유진",
+      "color": "#d64b72",
+      "voice": "Kore"
+    },
+    {
+      "id": "donghyun",
+      "name": "동현",
+      "color": "#3f6fd1",
+      "voice": "Charon"
+    }
+  ],
+  "lines": [
+    {
+      "speaker": "donghyun",
+      "shot": "shotA.png",
+      "emotion": "impressed and pleasantly surprised",
+      "emotion_ko": "감탄하며 기분 좋게 놀라",
+      "ko": "와, 화분을 다 놓고 보니까 느낌이 완전 다르네.",
+      "en": "Wow, now that I've set out all the potted plants, it feels totally different.",
+      "vi": "Chà, đặt hết các chậu cây vào rồi thì cảm giác khác hẳn nhỉ.",
+      "vi_back_ko": "와, 화분을 전부 놓으니 분위기가 확 달라지네요."
+    },
+    {
+      "speaker": "yujin",
+      "shot": "shotC.png",
+      "emotion": "proud and expectant, hoping for his approval",
+      "emotion_ko": "뿌듯해하며 칭찬을 기대하는 듯",
+      "ko": "거실이 너무 넓어서 허전해 보였는데 이렇게 화분을 몇 개 놓으니까 훨씬 좋지?",
+      "en": "The living room was so big that it looked a little empty, but doesn't it look much better now that I've placed a few potted plants here?",
+      "vi": "Phòng khách rộng quá nên trông trống trải, nhưng đặt thêm vài chậu cây thế này thì đẹp hơn nhiều, đúng không anh?",
+      "vi_back_ko": "거실이 너무 넓어서 휑해 보이는데, 이렇게 화분을 몇 개 더 놓으니 훨씬 예뻐졌죠, 그렇죠?"
+    },
+    {
+      "speaker": "donghyun",
+      "shot": "shotB.png",
+      "emotion": "gentle and a little hesitant, careful not to hurt her feelings",
+      "emotion_ko": "서운해하지 않게 조심스럽고 살짝 망설이듯",
+      "ko": "응, 그렇기는 한데 문 옆에 커다란 화분이 있으면 좀 불편할 것 같아.",
+      "en": "Yeah, that's true, but I think it would be a little inconvenient to have a big plant pot next to the door.",
+      "vi": "Ừ, đúng là vậy, nhưng nếu có một chậu cây lớn ở cạnh cửa thì anh thấy hơi bất tiện.",
+      "vi_back_ko": "네, 맞아요. 하지만 문 옆에 큰 화분이 있다면 좀 불편할 것 같아요."
+    },
+    {
+      "speaker": "yujin",
+      "shot": "shotC.png",
+      "emotion": "slightly surprised but open and curious",
+      "emotion_ko": "조금 놀랐지만 열린 마음으로 궁금해하며",
+      "ko": "그래? 그럼 어디로 옮기는 게 좋을까?",
+      "en": "Really? Then where should we move it?",
+      "vi": "Vậy sao? Vậy mình chuyển nó đi đâu thì tốt nhỉ?",
+      "vi_back_ko": "그래요? 그럼 어디로 옮기는 게 좋을까요?"
+    },
+    {
+      "speaker": "donghyun",
+      "shot": "shotB.png",
+      "emotion": "relieved and kind, offering to help",
+      "emotion_ko": "안도하며 다정하게 도와주겠다는 듯",
+      "ko": "창가 쪽으로 옮기자. 내가 도와줄게.",
+      "en": "Let's move it over to the window. I'll help you.",
+      "vi": "Mình chuyển nó sang phía cửa sổ nhé. Để anh giúp em.",
+      "vi_back_ko": "이걸 창가 쪽으로 옮겨 볼까? 내가 도와줄게."
+    }
+  ],
+  "shots": {
+    "shotA": "화분 몇 개가 놓인 밝은 거실. 유진이 뿌듯하게 화분을 보고 동현이 문 쪽의 큰 화분을 살피며 서 있음 (투샷)",
+    "shotB": "동현 클로즈업. 조심스럽게 말을 꺼내는 표정",
+    "shotC": "유진 클로즈업. 뿌듯해하다 살짝 놀라지만 열린 표정"
+  },
+  "youtube": {
+    "en": {
+      "title": "Korean Conversation: Saying 'It Might Be Inconvenient' Politely 🚪 #shorts",
+      "description": "Today's Korean: 조심스럽게 불편함 말하기 (Politely saying something is inconvenient)\n\n동현: 와, 화분을 다 놓고 보니까 느낌이 완전 다르네.\n유진: 거실이 너무 넓어서 허전해 보였는데 이렇게 화분을 몇 개 놓으니까 훨씬 좋지?\n동현: 응, 그렇기는 한데 문 옆에 커다란 화분이 있으면 좀 불편할 것 같아.\n유진: 그래? 그럼 어디로 옮기는 게 좋을까?\n동현: 창가 쪽으로 옮기자. 내가 도와줄게.\n\nListen, then repeat slowly! #LearnKorean #KoreanConversation #Korean #shorts\n\nVoices and images were created with AI."
+    },
+    "vi": {
+      "title": "Hội thoại tiếng Hàn: Nói khéo rằng thấy bất tiện 🚪 #shorts",
+      "description": "Tiếng Hàn hôm nay: 조심스럽게 불편함 말하기 (Nói khéo về điều bất tiện)\n\n동현: 와, 화분을 다 놓고 보니까 느낌이 완전 다르네.\n유진: 거실이 너무 넓어서 허전해 보였는데 이렇게 화분을 몇 개 놓으니까 훨씬 좋지?\n동현: 응, 그렇기는 한데 문 옆에 커다란 화분이 있으면 좀 불편할 것 같아.\n유진: 그래? 그럼 어디로 옮기는 게 좋을까?\n동현: 창가 쪽으로 옮기자. 내가 도와줄게.\n\nNghe rồi nói theo nhé! #HocTiengHan #TiengHan #shorts\n\nGiọng nói và hình ảnh được tạo bằng AI."
+    }
+  },
+  "tiktok_vi": {
+    "caption": "Tiếng Hàn: Nói khéo rằng thấy bất tiện 🚪 Nghe rồi nói theo nhé! #hoctienghan #tienghan #tienghangiaotiep #korean"
+  },
+  "uploads": {}
+}

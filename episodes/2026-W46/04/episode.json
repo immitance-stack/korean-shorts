@@ -1,0 +1,97 @@
+{
+  "id": "2026-W46-04",
+  "status": "draft",
+  "style": "photo",
+  "cast": "유진: 30대 중반 한국 여성, 어깨 길이의 부드러운 갈색 웨이브 머리, 크림색 니트. 동현: 30대 중반 한국 남성, 짧은 검은 머리에 가는 테 안경, 회색 가디건. 이사 온 새 집에서 함께 사는 부부(반말).",
+  "topic": {
+    "ko": "집안일 나누기",
+    "en": "Sharing household chores",
+    "vi": "Chia việc nhà"
+  },
+  "scene": "저녁 무렵 거실",
+  "characters": [
+    {
+      "id": "yujin",
+      "name": "유진",
+      "color": "#d64b72",
+      "voice": "Kore"
+    },
+    {
+      "id": "donghyun",
+      "name": "동현",
+      "color": "#3f6fd1",
+      "voice": "Charon"
+    }
+  ],
+  "lines": [
+    {
+      "speaker": "donghyun",
+      "shot": "shotA.png",
+      "emotion": "curious and sincere",
+      "emotion_ko": "궁금해하며 진지하게",
+      "ko": "화분에 물은 얼마나 자주 줘야 해?",
+      "en": "How often should I water my houseplants?",
+      "vi": "Chậu cây này cần tưới nước bao lâu một lần?",
+      "vi_back_ko": "이 화분은 얼마나 자주 물을 주어야 하나요?"
+    },
+    {
+      "speaker": "yujin",
+      "shot": "shotC.png",
+      "emotion": "cheerful, explaining kindly like someone who knows",
+      "emotion_ko": "아는 것을 알려 주듯 밝고 친절하게",
+      "ko": "일주일에 한 번이면 돼. 흙이 마르면 주는 거야.",
+      "en": "Once a week is enough. Water it when the soil gets dry.",
+      "vi": "Một tuần một lần là được. Khi nào đất khô thì tưới.",
+      "vi_back_ko": "일주일에 한 번이면 충분합니다. 흙이 마르면 물을 주세요."
+    },
+    {
+      "speaker": "donghyun",
+      "shot": "shotB.png",
+      "emotion": "willing and a little proud",
+      "emotion_ko": "선뜻 맡으며 조금 뿌듯하게",
+      "ko": "그럼 내가 일요일마다 물을 줄게.",
+      "en": "Then I'll water it every Sunday.",
+      "vi": "Vậy để anh tưới nước vào mỗi Chủ nhật.",
+      "vi_back_ko": "그럼 매주 일요일에 제가 물을 주겠습니다."
+    },
+    {
+      "speaker": "yujin",
+      "shot": "shotC.png",
+      "emotion": "grateful and warm",
+      "emotion_ko": "고마워하며 따뜻하게",
+      "ko": "고마워. 그럼 나는 잎을 닦아 줄게.",
+      "en": "Thanks. I'll wipe the leaves, then.",
+      "vi": "Cảm ơn anh. Vậy em sẽ lau lá cho cây.",
+      "vi_back_ko": "고마워요. 그럼 제가 나무 잎을 닦을게요."
+    },
+    {
+      "speaker": "donghyun",
+      "shot": "shotA.png",
+      "emotion": "content and happy, relaxed evening mood",
+      "emotion_ko": "만족스럽고 행복하게, 편안한 저녁 분위기로",
+      "ko": "좋아. 이제 우리 집이 정말 집 같다.",
+      "en": "All right. Now our house really feels like home.",
+      "vi": "Ừ. Giờ ngôi nhà của mình thật sự giống một ngôi nhà rồi.",
+      "vi_back_ko": "그래. 이제 우리 집이 진짜 집처럼 느껴져."
+    }
+  ],
+  "shots": {
+    "shotA": "저녁 노을빛이 드는 거실, 창가로 옮긴 화분 옆에 두 사람이 나란히 서서 화분을 봄 (투샷)",
+    "shotB": "동현 클로즈업. 진지하게 묻다가 뿌듯하게 웃는 표정",
+    "shotC": "유진 클로즈업. 친절하게 알려 주며 따뜻하게 웃는 표정"
+  },
+  "youtube": {
+    "en": {
+      "title": "Korean Conversation: Sharing Chores at Home 🏡 #shorts",
+      "description": "Today's Korean: 집안일 나누기 (Sharing household chores)\n\n동현: 화분에 물은 얼마나 자주 줘야 해?\n유진: 일주일에 한 번이면 돼. 흙이 마르면 주는 거야.\n동현: 그럼 내가 일요일마다 물을 줄게.\n유진: 고마워. 그럼 나는 잎을 닦아 줄게.\n동현: 좋아. 이제 우리 집이 정말 집 같다.\n\nListen, then repeat slowly! #LearnKorean #KoreanConversation #Korean #shorts\n\nVoices and images were created with AI."
+    },
+    "vi": {
+      "title": "Hội thoại tiếng Hàn: Chia việc nhà 🏡 #shorts",
+      "description": "Tiếng Hàn hôm nay: 집안일 나누기 (Chia việc nhà)\n\n동현: 화분에 물은 얼마나 자주 줘야 해?\n유진: 일주일에 한 번이면 돼. 흙이 마르면 주는 거야.\n동현: 그럼 내가 일요일마다 물을 줄게.\n유진: 고마워. 그럼 나는 잎을 닦아 줄게.\n동현: 좋아. 이제 우리 집이 정말 집 같다.\n\nNghe rồi nói theo nhé! #HocTiengHan #TiengHan #shorts\n\nGiọng nói và hình ảnh được tạo bằng AI."
+    }
+  },
+  "tiktok_vi": {
+    "caption": "Tiếng Hàn: Chia việc nhà 🏡 Nghe rồi nói theo nhé! #hoctienghan #tienghan #tienghangiaotiep #korean"
+  },
+  "uploads": {}
+}

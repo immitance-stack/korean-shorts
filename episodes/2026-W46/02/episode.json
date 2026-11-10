@@ -1,0 +1,97 @@
+{
+  "id": "2026-W46-02",
+  "status": "draft",
+  "style": "photo",
+  "cast": "유진: 30대 중반 한국 여성, 어깨 길이의 부드러운 갈색 웨이브 머리, 크림색 니트. 동현: 30대 중반 한국 남성, 짧은 검은 머리에 가는 테 안경, 회색 가디건. 이사 온 새 집에서 함께 사는 부부(반말).",
+  "topic": {
+    "ko": "화분 고르며 의견 말하기",
+    "en": "Choosing plants and sharing opinions",
+    "vi": "Chọn chậu cây và nói ý kiến"
+  },
+  "scene": "꽃집",
+  "characters": [
+    {
+      "id": "yujin",
+      "name": "유진",
+      "color": "#d64b72",
+      "voice": "Kore"
+    },
+    {
+      "id": "donghyun",
+      "name": "동현",
+      "color": "#3f6fd1",
+      "voice": "Charon"
+    }
+  ],
+  "lines": [
+    {
+      "speaker": "yujin",
+      "shot": "shotA.png",
+      "emotion": "excited and proud of her pick, showing it off",
+      "emotion_ko": "고른 화분이 마음에 들어 신이 나서 자랑하듯",
+      "ko": "이 화분 어때? 크기도 적당하고 예쁘지?",
+      "en": "What do you think of this flowerpot? It's just the right size and pretty, isn't it?",
+      "vi": "Chậu này thế nào anh? Kích thước vừa phải mà lại đẹp nữa, đúng không?",
+      "vi_back_ko": "이 화분 어때요? 크기도 적당하고 예쁘기도 하죠, 그렇죠?"
+    },
+    {
+      "speaker": "donghyun",
+      "shot": "shotB.png",
+      "emotion": "agreeing but a little unsure, thoughtful",
+      "emotion_ko": "동의하지만 조금 망설이며",
+      "ko": "응, 예쁘네. 그런데 우리 집에 잘 어울릴까?",
+      "en": "Yeah, it's pretty. But do you think it'll look good in our house?",
+      "vi": "Ừ, đẹp đấy. Nhưng không biết nó có hợp với nhà mình không nhỉ?",
+      "vi_back_ko": "네, 예쁘네요. 하지만 우리 집에 어울릴지 모르겠네요."
+    },
+    {
+      "speaker": "yujin",
+      "shot": "shotC.png",
+      "emotion": "reassuring and happily imagining it",
+      "emotion_ko": "상상하며 안심시키듯 밝게",
+      "ko": "거실 창가에 놓으면 잘 어울릴 것 같아.",
+      "en": "I think it would look great by the living room window.",
+      "vi": "Đặt ở cạnh cửa sổ phòng khách thì chắc sẽ hợp lắm.",
+      "vi_back_ko": "거실 창가 옆에 두면 정말 잘 어울릴 것 같아요."
+    },
+    {
+      "speaker": "donghyun",
+      "shot": "shotB.png",
+      "emotion": "decisive and warm, convinced",
+      "emotion_ko": "마음을 정하고 다정하게",
+      "ko": "그럼 이걸로 하자. 저 작은 것도 하나 사자.",
+      "en": "Well, let's go with this then. Let's buy one of those little ones, too.",
+      "vi": "Vậy mình lấy chậu này nhé. Mua thêm cái nhỏ kia nữa nhé.",
+      "vi_back_ko": "그럼 이 화분을 고를게요. 저기 있는 작은 것도 하나 더 사요."
+    },
+    {
+      "speaker": "yujin",
+      "shot": "shotC.png",
+      "emotion": "delighted and eager to get home",
+      "emotion_ko": "기뻐하며 얼른 집에 가고 싶은 듯",
+      "ko": "좋아! 집에 가서 바로 놓아 보자.",
+      "en": "Great! Let's go home and set it up right away.",
+      "vi": "Được đó! Về nhà mình bày thử ngay nhé.",
+      "vi_back_ko": "좋아요! 집에 가서 바로 한번 해볼게요."
+    }
+  ],
+  "shots": {
+    "shotA": "화분과 식물이 가득한 아담한 꽃집. 유진이 화분을 들어 보이고 동현이 옆에서 봄 (투샷)",
+    "shotB": "동현 클로즈업. 화분을 보며 살짝 망설이는 표정",
+    "shotC": "유진 클로즈업. 마음에 드는 화분을 보며 신나는 표정"
+  },
+  "youtube": {
+    "en": {
+      "title": "Korean Conversation: Picking Plants Together 🌿 #shorts",
+      "description": "Today's Korean: 화분 고르며 의견 말하기 (Choosing plants and sharing opinions)\n\n유진: 이 화분 어때? 크기도 적당하고 예쁘지?\n동현: 응, 예쁘네. 그런데 우리 집에 잘 어울릴까?\n유진: 거실 창가에 놓으면 잘 어울릴 것 같아.\n동현: 그럼 이걸로 하자. 저 작은 것도 하나 사자.\n유진: 좋아! 집에 가서 바로 놓아 보자.\n\nListen, then repeat slowly! #LearnKorean #KoreanConversation #Korean #shorts\n\nVoices and images were created with AI."
+    },
+    "vi": {
+      "title": "Hội thoại tiếng Hàn: Cùng chọn chậu cây 🌿 #shorts",
+      "description": "Tiếng Hàn hôm nay: 화분 고르며 의견 말하기 (Chọn chậu cây và nói ý kiến)\n\n유진: 이 화분 어때? 크기도 적당하고 예쁘지?\n동현: 응, 예쁘네. 그런데 우리 집에 잘 어울릴까?\n유진: 거실 창가에 놓으면 잘 어울릴 것 같아.\n동현: 그럼 이걸로 하자. 저 작은 것도 하나 사자.\n유진: 좋아! 집에 가서 바로 놓아 보자.\n\nNghe rồi nói theo nhé! #HocTiengHan #TiengHan #shorts\n\nGiọng nói và hình ảnh được tạo bằng AI."
+    }
+  },
+  "tiktok_vi": {
+    "caption": "Tiếng Hàn: Cùng chọn chậu cây 🌿 Nghe rồi nói theo nhé! #hoctienghan #tienghan #tienghangiaotiep #korean"
+  },
+  "uploads": {}
+}
