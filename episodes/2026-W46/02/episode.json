@@ -1,6 +1,6 @@
 {
   "id": "2026-W46-02",
-  "status": "awaiting_approval",
+  "status": "uploaded",
   "style": "photo",
   "cast": "유진: 30대 중반 한국 여성, 어깨 길이의 부드러운 갈색 웨이브 머리, 크림색 니트. 동현: 30대 중반 한국 남성, 짧은 검은 머리에 가는 테 안경, 회색 가디건. 이사 온 새 집에서 함께 사는 부부(반말).",
   "topic": {
@@ -93,7 +93,12 @@
   "tiktok_vi": {
     "caption": "Tiếng Hàn: Cùng chọn chậu cây 🌿 Nghe rồi nói theo nhé! #hoctienghan #tienghan #tienghangiaotiep #korean"
   },
-  "uploads": {},
+  "uploads": {
+    "youtube_en": "https://www.youtube.com/watch?v=xMtdtYsskVc",
+    "youtube_vi": "https://www.youtube.com/watch?v=r8lJnNVLA6k",
+    "uploaded_at_kst": "2026-11-12 18:00",
+    "tiktok_vi": "사용자 직접 업로드"
+  },
   "publish_date": "2026-11-12",
   "cloudflare": {
     "model": "@cf/black-forest-labs/flux-2-dev",
