@@ -1,6 +1,6 @@
 {
   "id": "2026-W46-02",
-  "status": "script_approved",
+  "status": "awaiting_approval",
   "style": "photo",
   "cast": "유진: 30대 중반 한국 여성, 어깨 길이의 부드러운 갈색 웨이브 머리, 크림색 니트. 동현: 30대 중반 한국 남성, 짧은 검은 머리에 가는 테 안경, 회색 가디건. 이사 온 새 집에서 함께 사는 부부(반말).",
   "topic": {
@@ -94,5 +94,12 @@
     "caption": "Tiếng Hàn: Cùng chọn chậu cây 🌿 Nghe rồi nói theo nhé! #hoctienghan #tienghan #tienghangiaotiep #korean"
   },
   "uploads": {},
-  "publish_date": "2026-11-12"
+  "publish_date": "2026-11-12",
+  "cloudflare": {
+    "model": "@cf/black-forest-labs/flux-2-dev",
+    "shotA": "1편 shotA를 기준으로 편집(같은 부부, 꽃집)",
+    "shotB": "shotA 기준 동현 클로즈업",
+    "shotC": "shotA 기준 유진 클로즈업"
+  },
+  "note": "2026-11-12 KST: 제작 완료. 5문장 모두 감정 음성 사용(2번 대사는 3번째 시도에서 통과). 받아쓰기·영어 검사 통과(영어 없음). 받아쓰기에서 1번 대사 앞에 '어', 2번 대사 앞에 '음'이 들렸으나 느린 구간에서는 안 들려 인식 잡음으로 봄."
 }
