@@ -19,7 +19,7 @@ if [ "$1" = "put" ]; then
   cp "$4" "$WT/${id}_vi.mp4"
 fi
 git -C "$WT" add -A
-git -C "$WT" -c user.name="immitance-stack" -c user.email="immitance@gmail.com" commit -qm "media: ${1} ${2:-}"
+git -C "$WT" -c user.name="Claude" -c user.email="noreply@anthropic.com" commit -qm "media: ${1} ${2:-}"
 git -C "$WT" push -q -f origin media-tmp:media 2>&1 | grep -v -E "negotiation|acknowledgments|^remote: *$" || true
 if [ "$1" = "put" ]; then
   for lang in en vi; do
