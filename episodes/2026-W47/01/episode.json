@@ -1,0 +1,97 @@
+{
+  "id": "2026-W47-01",
+  "status": "draft",
+  "style": "photo",
+  "cast": "민지: 20대 후반 한국 여성, 어깨에 닿는 검은 단발과 앞머리, 노란색 가디건. 현우: 20대 후반 한국 남성, 짧은 검은 머리, 흰 티셔츠에 남색 후드 집업. 친한 친구 사이(반말).",
+  "topic": {
+    "ko": "새로 산 물건 자랑하기",
+    "en": "Showing off something new",
+    "vi": "Khoe món đồ mới mua"
+  },
+  "scene": "카페",
+  "characters": [
+    {
+      "id": "minji",
+      "name": "민지",
+      "color": "#d64b72",
+      "voice": "Kore"
+    },
+    {
+      "id": "hyunwoo",
+      "name": "현우",
+      "color": "#3f6fd1",
+      "voice": "Charon"
+    }
+  ],
+  "lines": [
+    {
+      "speaker": "minji",
+      "shot": "shotA.png",
+      "emotion": "amazed and delighted, spotting something new",
+      "emotion_ko": "새 물건을 보고 놀라며 감탄하듯",
+      "ko": "와, 이 운동화 새로 샀어? 멋있다!",
+      "en": "Wow, did you just buy those sneakers? They look great!",
+      "vi": "Ồ, cậu mới mua đôi giày thể thao này à? Đẹp quá!",
+      "vi_back_ko": "오, 이 운동화를 방금 샀어? 정말 멋지네!"
+    },
+    {
+      "speaker": "hyunwoo",
+      "shot": "shotB.png",
+      "emotion": "pleased and a little proud, curious about her reaction",
+      "emotion_ko": "뿌듯하고 조금 자랑스럽게, 반응이 궁금한 듯",
+      "ko": "응, 어제 도착했어. 마음에 들지?",
+      "en": "Yeah, it arrived yesterday. Do you like it?",
+      "vi": "Ừ, hôm qua nó mới về tới. Cậu thấy thích không?",
+      "vi_back_ko": "응, 어제 막 도착했어. 마음에 드니?"
+    },
+    {
+      "speaker": "minji",
+      "shot": "shotC.png",
+      "emotion": "admiring and curious, asking eagerly",
+      "emotion_ko": "감탄하며 궁금해서 신나게 물으며",
+      "ko": "응, 정말 예뻐. 어디서 샀어?",
+      "en": "Yeah, it's really pretty. Where did you get it?",
+      "vi": "Ừ, đẹp thật. Cậu mua ở đâu vậy?",
+      "vi_back_ko": "그래, 정말 예쁘네. 어디서 샀어?"
+    },
+    {
+      "speaker": "hyunwoo",
+      "shot": "shotB.png",
+      "emotion": "casual and proud, explaining",
+      "emotion_ko": "가볍고 자랑스럽게 설명하며",
+      "ko": "해외 쇼핑몰에서 샀어. 이 색깔은 우리나라에 없더라.",
+      "en": "I bought it from an overseas online store. I couldn't find this color here.",
+      "vi": "Mình mua ở một trang mua sắm trực tuyến nước ngoài. Màu này ở Hàn Quốc không có.",
+      "vi_back_ko": "저는 해외 온라인 쇼핑몰에서 샀어요. 이 색상은 한국에서는 구할 수 없어요."
+    },
+    {
+      "speaker": "minji",
+      "shot": "shotC.png",
+      "emotion": "intrigued and interested",
+      "emotion_ko": "호기심이 생겨 관심을 보이며",
+      "ko": "그래? 나도 한번 보고 싶다.",
+      "en": "Really? I'd like to see it too.",
+      "vi": "Vậy à? Mình cũng muốn xem thử.",
+      "vi_back_ko": "그래요? 저도 한번 보고 싶네요."
+    }
+  ],
+  "shots": {
+    "shotA": "아늑한 카페 테이블. 현우가 새 운동화를 들어 보이고 민지가 감탄하며 바라봄 (투샷)",
+    "shotB": "현우 클로즈업. 뿌듯하고 자랑스러운 미소",
+    "shotC": "민지 클로즈업. 감탄하다가 궁금해하는 표정"
+  },
+  "youtube": {
+    "en": {
+      "title": "Korean Conversation: Showing Off My New Sneakers 👟 #shorts",
+      "description": "Today's Korean: 새로 산 물건 자랑하기 (Showing off something new)\n\n민지: 와, 이 운동화 새로 샀어? 멋있다!\n현우: 응, 어제 도착했어. 마음에 들지?\n민지: 응, 정말 예뻐. 어디서 샀어?\n현우: 해외 쇼핑몰에서 샀어. 이 색깔은 우리나라에 없더라.\n민지: 그래? 나도 한번 보고 싶다.\n\nListen, then repeat slowly! #LearnKorean #KoreanConversation #Korean #shorts\n\nVoices and images were created with AI."
+    },
+    "vi": {
+      "title": "Hội thoại tiếng Hàn: Khoe giày mới 👟 #shorts",
+      "description": "Tiếng Hàn hôm nay: 새로 산 물건 자랑하기 (Khoe món đồ mới mua)\n\n민지: 와, 이 운동화 새로 샀어? 멋있다!\n현우: 응, 어제 도착했어. 마음에 들지?\n민지: 응, 정말 예뻐. 어디서 샀어?\n현우: 해외 쇼핑몰에서 샀어. 이 색깔은 우리나라에 없더라.\n민지: 그래? 나도 한번 보고 싶다.\n\nNghe rồi nói theo nhé! #HocTiengHan #TiengHan #shorts\n\nGiọng nói và hình ảnh được tạo bằng AI."
+    }
+  },
+  "tiktok_vi": {
+    "caption": "Tiếng Hàn: Khoe giày mới 👟 Nghe rồi nói theo nhé! #hoctienghan #tienghan #tienghangiaotiep #korean"
+  },
+  "uploads": {}
+}

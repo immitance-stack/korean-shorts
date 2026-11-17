@@ -1,0 +1,87 @@
+{
+  "id": "2026-W47-03",
+  "status": "draft",
+  "style": "photo",
+  "cast": "민지: 20대 후반 한국 여성, 어깨에 닿는 검은 단발과 앞머리, 노란색 가디건. 현우: 20대 후반 한국 남성, 짧은 검은 머리, 흰 티셔츠에 남색 후드 집업. 친한 친구 사이(반말).",
+  "topic": {
+    "ko": "쇼핑 팁 알려 주기",
+    "en": "Sharing shopping tips",
+    "vi": "Chia sẻ mẹo mua sắm"
+  },
+  "scene": "카페",
+  "characters": [
+    {
+      "id": "minji",
+      "name": "민지",
+      "color": "#d64b72",
+      "voice": "Kore"
+    },
+    {
+      "id": "hyunwoo",
+      "name": "현우",
+      "color": "#3f6fd1",
+      "voice": "Charon"
+    }
+  ],
+  "lines": [
+    {
+      "speaker": "minji",
+      "shot": "shotC.png",
+      "emotion": "hesitant and a little nervous, but wanting to try",
+      "emotion_ko": "망설이고 조금 긴장했지만 해 보고 싶은 듯",
+      "ko": "주문하기 복잡하지 않아? 나도 한번 해 볼까 하는데.",
+      "en": "Isn't ordering a bit complicated? I'm thinking of giving it a try myself.",
+      "vi": "Đặt hàng có phức tạp không? Mình cũng đang định thử xem sao.",
+      "vi_back_ko": "주문하는 게 복잡한가요? 저도 한번 해볼까 생각 중이에요."
+    },
+    {
+      "speaker": "hyunwoo",
+      "shot": "shotB.png",
+      "emotion": "encouraging and helpful, giving friendly advice",
+      "emotion_ko": "격려하며 다정하게 조언하듯",
+      "ko": "별로 안 어렵던데. 세일하면 더 싸지니까 세일 기간도 잘 알아보고 해.",
+      "en": "It wasn't that hard. It's even cheaper on sale, so be sure to check when the sale is on.",
+      "vi": "Cũng không khó lắm đâu. Khi có đợt giảm giá thì còn rẻ hơn nữa, nên cậu nhớ tìm hiểu kỹ thời gian giảm giá rồi hãy mua nhé.",
+      "vi_back_ko": "그렇게 어렵지 않아요. 세일 기간에는 더 저렴해지니까, 세일 기간을 잘 확인하고 구매하세요."
+    },
+    {
+      "speaker": "minji",
+      "shot": "shotC.png",
+      "emotion": "relieved and eager, asking for the date",
+      "emotion_ko": "마음이 놓이고 의욕이 생겨 날짜를 묻듯",
+      "ko": "알겠어. 그럼 다음 세일은 언제야?",
+      "en": "Okay. So when's the next sale?",
+      "vi": "Hiểu rồi. Vậy đợt giảm giá tiếp theo là khi nào?",
+      "vi_back_ko": "알겠습니다. 그럼 다음 할인 행사는 언제인가요?"
+    },
+    {
+      "speaker": "hyunwoo",
+      "shot": "shotA.png",
+      "emotion": "cheerful and inviting",
+      "emotion_ko": "밝게 같이 하자고 권하듯",
+      "ko": "다음 달에 큰 세일이 있대. 그때 같이 주문해 보자.",
+      "en": "I heard there's going to be a big sale next month. Let's place an order together then.",
+      "vi": "Nghe nói tháng sau sẽ có đợt giảm giá lớn. Lúc đó mình cùng đặt hàng nhé.",
+      "vi_back_ko": "다음 달에 대규모 할인 행사가 있다고 들었어요. 그때 같이 주문해요."
+    }
+  ],
+  "shots": {
+    "shotA": "카페 테이블에서 한 노트북을 함께 들여다보는 두 사람. 노트북 화면은 보이지 않게, 민지는 해 보고 싶은 듯 현우는 친절히 알려 줌 (투샷)",
+    "shotB": "현우 클로즈업. 격려하며 다정하게 조언하는 표정",
+    "shotC": "민지 클로즈업. 망설이다 의욕이 생기는 표정"
+  },
+  "youtube": {
+    "en": {
+      "title": "Korean Conversation: Shopping Tips from a Friend 🛍️ #shorts",
+      "description": "Today's Korean: 쇼핑 팁 알려 주기 (Sharing shopping tips)\n\n민지: 주문하기 복잡하지 않아? 나도 한번 해 볼까 하는데.\n현우: 별로 안 어렵던데. 세일하면 더 싸지니까 세일 기간도 잘 알아보고 해.\n민지: 알겠어. 그럼 다음 세일은 언제야?\n현우: 다음 달에 큰 세일이 있대. 그때 같이 주문해 보자.\n\nListen, then repeat slowly! #LearnKorean #KoreanConversation #Korean #shorts\n\nVoices and images were created with AI."
+    },
+    "vi": {
+      "title": "Hội thoại tiếng Hàn: Mẹo mua sắm từ bạn bè 🛍️ #shorts",
+      "description": "Tiếng Hàn hôm nay: 쇼핑 팁 알려 주기 (Chia sẻ mẹo mua sắm)\n\n민지: 주문하기 복잡하지 않아? 나도 한번 해 볼까 하는데.\n현우: 별로 안 어렵던데. 세일하면 더 싸지니까 세일 기간도 잘 알아보고 해.\n민지: 알겠어. 그럼 다음 세일은 언제야?\n현우: 다음 달에 큰 세일이 있대. 그때 같이 주문해 보자.\n\nNghe rồi nói theo nhé! #HocTiengHan #TiengHan #shorts\n\nGiọng nói và hình ảnh được tạo bằng AI."
+    }
+  },
+  "tiktok_vi": {
+    "caption": "Tiếng Hàn: Mẹo mua sắm từ bạn bè 🛍️ Nghe rồi nói theo nhé! #hoctienghan #tienghan #tienghangiaotiep #korean"
+  },
+  "uploads": {}
+}

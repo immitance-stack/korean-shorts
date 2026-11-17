@@ -1,0 +1,87 @@
+{
+  "id": "2026-W47-02",
+  "status": "draft",
+  "style": "photo",
+  "cast": "민지: 20대 후반 한국 여성, 어깨에 닿는 검은 단발과 앞머리, 노란색 가디건. 현우: 20대 후반 한국 남성, 짧은 검은 머리, 흰 티셔츠에 남색 후드 집업. 친한 친구 사이(반말).",
+  "topic": {
+    "ko": "해외 쇼핑의 장단점 말하기",
+    "en": "Talking about the pros and cons of overseas shopping",
+    "vi": "Nói về ưu nhược điểm của mua sắm nước ngoài"
+  },
+  "scene": "카페",
+  "characters": [
+    {
+      "id": "minji",
+      "name": "민지",
+      "color": "#d64b72",
+      "voice": "Kore"
+    },
+    {
+      "id": "hyunwoo",
+      "name": "현우",
+      "color": "#3f6fd1",
+      "voice": "Charon"
+    }
+  ],
+  "lines": [
+    {
+      "speaker": "minji",
+      "shot": "shotC.png",
+      "emotion": "curious, checking something she heard",
+      "emotion_ko": "들은 이야기를 확인하듯 궁금하게",
+      "ko": "해외 온라인 쇼핑몰에서 물건을 사면 싸다면서?",
+      "en": "Don't they say it's cheaper to buy things from overseas online stores?",
+      "vi": "Nghe nói mua đồ trên các trang mua sắm trực tuyến nước ngoài thì rẻ lắm phải không?",
+      "vi_back_ko": "해외 온라인 쇼핑몰에서 물건을 사면 정말 저렴하다고 들었는데, 맞나요?"
+    },
+    {
+      "speaker": "hyunwoo",
+      "shot": "shotB.png",
+      "emotion": "confident and enthusiastic, listing the advantages",
+      "emotion_ko": "자신 있고 신나게 장점을 늘어놓듯",
+      "ko": "응. 시간은 좀 오래 걸리는데 훨씬 더 싸. 국내에서 구할 수 없는 물건도 살 수 있고.",
+      "en": "Yeah. It takes a little longer, but it's way cheaper. You can also buy things you can't find here.",
+      "vi": "Ừ. Tuy hơi lâu một chút nhưng rẻ hơn nhiều. Còn mua được cả những món đồ không tìm thấy ở trong nước nữa.",
+      "vi_back_ko": "네. 시간이 좀 걸리긴 하지만 훨씬 저렴하죠. 게다가 국내에서는 구할 수 없는 물건들도 살 수 있고요."
+    },
+    {
+      "speaker": "minji",
+      "shot": "shotC.png",
+      "emotion": "interested but a little worried",
+      "emotion_ko": "관심은 있지만 조금 걱정스럽게",
+      "ko": "그렇구나. 배송은 보통 얼마나 걸려?",
+      "en": "I see. How long does shipping usually take?",
+      "vi": "Ra vậy. Giao hàng thường mất bao lâu?",
+      "vi_back_ko": "그렇군요. 배송은 보통 얼마나 걸리나요?"
+    },
+    {
+      "speaker": "hyunwoo",
+      "shot": "shotA.png",
+      "emotion": "relaxed and reassuring",
+      "emotion_ko": "느긋하게 안심시키듯",
+      "ko": "보통 2주쯤 걸려. 그 정도는 기다릴 만해.",
+      "en": "It usually takes about two weeks. It's worth the wait.",
+      "vi": "Thường khoảng 2 tuần. Chờ chừng đó thì cũng đáng.",
+      "vi_back_ko": "보통 2주 정도 걸립니다. 그만큼 기다릴 만한 가치가 있습니다."
+    }
+  ],
+  "shots": {
+    "shotA": "카페 테이블에 노트북을 펴 놓고 마주 앉아 이야기하는 두 사람. 노트북 화면은 보이지 않게 (투샷)",
+    "shotB": "현우 클로즈업. 자신 있게 장점을 설명하는 표정",
+    "shotC": "민지 클로즈업. 관심은 있지만 조금 걱정하는 표정"
+  },
+  "youtube": {
+    "en": {
+      "title": "Korean Conversation: Is Overseas Shopping Really Cheaper? 📦 #shorts",
+      "description": "Today's Korean: 해외 쇼핑의 장단점 말하기 (Talking about the pros and cons of overseas shopping)\n\n민지: 해외 온라인 쇼핑몰에서 물건을 사면 싸다면서?\n현우: 응. 시간은 좀 오래 걸리는데 훨씬 더 싸. 국내에서 구할 수 없는 물건도 살 수 있고.\n민지: 그렇구나. 배송은 보통 얼마나 걸려?\n현우: 보통 2주쯤 걸려. 그 정도는 기다릴 만해.\n\nListen, then repeat slowly! #LearnKorean #KoreanConversation #Korean #shorts\n\nVoices and images were created with AI."
+    },
+    "vi": {
+      "title": "Hội thoại tiếng Hàn: Mua sắm nước ngoài có rẻ thật không? 📦 #shorts",
+      "description": "Tiếng Hàn hôm nay: 해외 쇼핑의 장단점 말하기 (Nói về ưu nhược điểm của mua sắm nước ngoài)\n\n민지: 해외 온라인 쇼핑몰에서 물건을 사면 싸다면서?\n현우: 응. 시간은 좀 오래 걸리는데 훨씬 더 싸. 국내에서 구할 수 없는 물건도 살 수 있고.\n민지: 그렇구나. 배송은 보통 얼마나 걸려?\n현우: 보통 2주쯤 걸려. 그 정도는 기다릴 만해.\n\nNghe rồi nói theo nhé! #HocTiengHan #TiengHan #shorts\n\nGiọng nói và hình ảnh được tạo bằng AI."
+    }
+  },
+  "tiktok_vi": {
+    "caption": "Tiếng Hàn: Mua sắm nước ngoài có rẻ thật không? 📦 Nghe rồi nói theo nhé! #hoctienghan #tienghan #tienghangiaotiep #korean"
+  },
+  "uploads": {}
+}
