@@ -1,6 +1,6 @@
 {
   "id": "2026-W45-04",
-  "status": "awaiting_approval",
+  "status": "uploaded",
   "style": "photo",
   "cast": "지수: 30대 초반 한국 여성, 긴 검은 머리를 하나로 묶음, 회사원. 준호: 30대 초반 한국 남성, 짧은 검은 머리, 회사원. 두 사람은 직장 동료(존댓말).",
   "topic": {
@@ -93,7 +93,12 @@
   "tiktok_vi": {
     "caption": "Tiếng Hàn: Lần sau đi leo núi tiếp nhé! 🍙 Nghe rồi nói theo nhé! #hoctienghan #tienghan #tienghangiaotiep #korean"
   },
-  "uploads": {},
+  "uploads": {
+    "youtube_en": "https://www.youtube.com/watch?v=m1tR4d-q11c",
+    "youtube_vi": "https://www.youtube.com/watch?v=nZhS4-e-8JA",
+    "uploaded_at_kst": "2026-11-18 22:07",
+    "tiktok_vi": "사용자 직접 업로드"
+  },
   "publish_date": "2026-11-06",
   "cloudflare": {
     "model": "@cf/black-forest-labs/flux-2-dev",
