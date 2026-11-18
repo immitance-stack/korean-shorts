@@ -1,6 +1,6 @@
 {
   "id": "2026-W47-01",
-  "status": "script_approved",
+  "status": "awaiting_approval",
   "style": "photo",
   "cast": "민지: 20대 후반 한국 여성, 어깨에 닿는 검은 단발과 앞머리, 노란색 가디건. 현우: 20대 후반 한국 남성, 짧은 검은 머리, 흰 티셔츠에 남색 후드 집업. 친한 친구 사이(반말).",
   "topic": {
@@ -94,5 +94,12 @@
     "caption": "Tiếng Hàn: Khoe giày mới 👟 Nghe rồi nói theo nhé! #hoctienghan #tienghan #tienghangiaotiep #korean"
   },
   "uploads": {},
-  "publish_date": "2026-11-18"
+  "publish_date": "2026-11-18",
+  "cloudflare": {
+    "model": "@cf/black-forest-labs/flux-2-dev",
+    "shotA": "텍스트 프롬프트로 생성(이번 주 기준 사진). 첫 시도 사진의 운동화에 유명 브랜드 로고처럼 보이는 표시가 있어 로고 없는 신발로 다시 생성",
+    "shotB": "shotA 기준 현우 클로즈업",
+    "shotC": "shotA 기준 민지 클로즈업"
+  },
+  "note": "2026-11-18 KST: 제작 완료(영상 50초). 5문장 모두 감정 음성 사용(첫 시도 통과). 받아쓰기·영어 검사 통과(영어 없음)."
 }
