@@ -1,12 +1,12 @@
 {
   "id": "2026-W47-02",
-  "status": "script_approved",
+  "status": "awaiting_approval",
   "style": "photo",
   "cast": "민지: 20대 후반 한국 여성, 어깨에 닿는 검은 단발과 앞머리, 노란색 가디건. 현우: 20대 후반 한국 남성, 짧은 검은 머리, 흰 티셔츠에 남색 후드 집업. 친한 친구 사이(반말).",
   "topic": {
     "ko": "해외 쇼핑의 장단점 말하기",
-    "en": "Talking about the pros and cons of overseas shopping",
-    "vi": "Nói về ưu nhược điểm của mua sắm nước ngoài"
+    "en": "Pros and cons of overseas shopping",
+    "vi": "Ưu nhược điểm khi mua sắm nước ngoài"
   },
   "scene": "카페",
   "characters": [
@@ -73,16 +73,23 @@
   "youtube": {
     "en": {
       "title": "Korean Conversation: Is Overseas Shopping Really Cheaper? 📦 #shorts",
-      "description": "Today's Korean: 해외 쇼핑의 장단점 말하기 (Talking about the pros and cons of overseas shopping)\n\n민지: 해외 온라인 쇼핑몰에서 물건을 사면 싸다면서?\n현우: 응. 시간은 좀 오래 걸리는데 훨씬 더 싸. 국내에서 구할 수 없는 물건도 살 수 있고.\n민지: 그렇구나. 배송은 보통 얼마나 걸려?\n현우: 보통 2주쯤 걸려. 그 정도는 기다릴 만해.\n\nListen, then repeat slowly! #LearnKorean #KoreanConversation #Korean #shorts\n\nVoices and images were created with AI."
+      "description": "Today's Korean: 해외 쇼핑의 장단점 말하기 (Pros and cons of overseas shopping)\n\n민지: 해외 온라인 쇼핑몰에서 물건을 사면 싸다면서?\n현우: 응. 시간은 좀 오래 걸리는데 훨씬 더 싸. 국내에서 구할 수 없는 물건도 살 수 있고.\n민지: 그렇구나. 배송은 보통 얼마나 걸려?\n현우: 보통 2주쯤 걸려. 그 정도는 기다릴 만해.\n\nListen, then repeat slowly! #LearnKorean #KoreanConversation #Korean #shorts\n\nVoices and images were created with AI."
     },
     "vi": {
       "title": "Hội thoại tiếng Hàn: Mua sắm nước ngoài có rẻ thật không? 📦 #shorts",
-      "description": "Tiếng Hàn hôm nay: 해외 쇼핑의 장단점 말하기 (Nói về ưu nhược điểm của mua sắm nước ngoài)\n\n민지: 해외 온라인 쇼핑몰에서 물건을 사면 싸다면서?\n현우: 응. 시간은 좀 오래 걸리는데 훨씬 더 싸. 국내에서 구할 수 없는 물건도 살 수 있고.\n민지: 그렇구나. 배송은 보통 얼마나 걸려?\n현우: 보통 2주쯤 걸려. 그 정도는 기다릴 만해.\n\nNghe rồi nói theo nhé! #HocTiengHan #TiengHan #shorts\n\nGiọng nói và hình ảnh được tạo bằng AI."
+      "description": "Tiếng Hàn hôm nay: 해외 쇼핑의 장단점 말하기 (Ưu nhược điểm khi mua sắm nước ngoài)\n\n민지: 해외 온라인 쇼핑몰에서 물건을 사면 싸다면서?\n현우: 응. 시간은 좀 오래 걸리는데 훨씬 더 싸. 국내에서 구할 수 없는 물건도 살 수 있고.\n민지: 그렇구나. 배송은 보통 얼마나 걸려?\n현우: 보통 2주쯤 걸려. 그 정도는 기다릴 만해.\n\nNghe rồi nói theo nhé! #HocTiengHan #TiengHan #shorts\n\nGiọng nói và hình ảnh được tạo bằng AI."
     }
   },
   "tiktok_vi": {
     "caption": "Tiếng Hàn: Mua sắm nước ngoài có rẻ thật không? 📦 Nghe rồi nói theo nhé! #hoctienghan #tienghan #tienghangiaotiep #korean"
   },
   "uploads": {},
-  "publish_date": "2026-11-19"
+  "publish_date": "2026-11-19",
+  "cloudflare": {
+    "model": "@cf/black-forest-labs/flux-2-dev",
+    "shotA": "1편 shotA를 기준으로 편집(같은 두 사람, 카페 테이블에 노트북, 화면은 보이지 않게)",
+    "shotB": "shotA 기준 현우 클로즈업",
+    "shotC": "shotA 기준 민지 클로즈업"
+  },
+  "note": "2026-11-19 KST: 제작 완료(영상 47초). 4문장 모두 감정 음성 사용. 영어·베트남어 주제 줄이 화면 가장자리까지 차서 짧게 줄임. 각 대사·보통 속도 전체 받아쓰기 통과(영어 없음). 천천히 구간 받아쓰기는 Gemini 응답 지연으로 완료하지 못했으나 같은 음성을 늘린 것. 3번 대사 앞에 '아,'가 들림."
 }
