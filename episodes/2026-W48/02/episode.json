@@ -1,0 +1,87 @@
+{
+  "id": "2026-W48-02",
+  "status": "draft",
+  "style": "photo",
+  "cast": "지원: 30대 초반 한국 여성, 어깨까지 오는 밤색 곱슬머리, 베이지색 후드티. 태민: 30대 초반 한국 남성, 짧은 검은 머리, 초록색 체크 셔츠. 친한 친구 사이(반말).",
+  "topic": {
+    "ko": "중고 가게에 물건 팔기",
+    "en": "Selling to a second-hand store",
+    "vi": "Bán đồ cho cửa hàng đồ cũ"
+  },
+  "scene": "침실",
+  "characters": [
+    {
+      "id": "jiwon",
+      "name": "지원",
+      "color": "#d64b72",
+      "voice": "Kore"
+    },
+    {
+      "id": "taemin",
+      "name": "태민",
+      "color": "#3f6fd1",
+      "voice": "Charon"
+    }
+  ],
+  "lines": [
+    {
+      "speaker": "jiwon",
+      "shot": "shotC.png",
+      "emotion": "curious and hopeful, asking for advice",
+      "emotion_ko": "궁금하고 기대하며 조언을 구하듯",
+      "ko": "중고 가게에서 가구를 사 가기도 한다면서? 침대를 팔까 하는데 어떻게 하면 돼?",
+      "en": "I heard second-hand stores sometimes buy furniture, right? I'm thinking of selling my bed. How do I do it?",
+      "vi": "Nghe nói cửa hàng đồ cũ cũng mua đồ nội thất phải không? Mình định bán cái giường, phải làm thế nào?",
+      "vi_back_ko": "중고품 가게에서도 가구를 사준다고 들었는데, 맞나요? 침대를 팔려고 하는데 어떻게 해야 할까요?"
+    },
+    {
+      "speaker": "taemin",
+      "shot": "shotB.png",
+      "emotion": "helpful and clear, explaining step by step",
+      "emotion_ko": "친절하고 또렷하게 순서대로 알려 주듯",
+      "ko": "먼저 침대 사진을 찍어서 가게 홈페이지에 올리고 어느 회사 제품인지도 써 봐. 그럼 가게에서 연락이 올 거야.",
+      "en": "First, take a picture of the bed, post it on the store's website, and write which company's product it is. Then the store will contact you.",
+      "vi": "Trước tiên, cậu chụp ảnh cái giường rồi đăng lên trang web của cửa hàng, nhớ ghi cả là sản phẩm của hãng nào nữa. Sau đó cửa hàng sẽ liên lạc với cậu.",
+      "vi_back_ko": "먼저, 침대 사진을 찍어서 매장 웹사이트에 올리고, 어떤 브랜드 제품인지 꼭 기재해 주세요. 그러면 매장에서 연락을 드릴 것입니다."
+    },
+    {
+      "speaker": "jiwon",
+      "shot": "shotC.png",
+      "emotion": "attentive, asking a follow-up question",
+      "emotion_ko": "귀 기울이며 이어서 묻듯",
+      "ko": "사진은 어떻게 찍으면 돼?",
+      "en": "How should I take the photo?",
+      "vi": "Chụp ảnh thế nào thì được?",
+      "vi_back_ko": "어떻게 사진을 찍어야 할까요?"
+    },
+    {
+      "speaker": "taemin",
+      "shot": "shotA.png",
+      "emotion": "friendly and practical, giving tips",
+      "emotion_ko": "다정하고 실용적으로 팁을 주듯",
+      "ko": "밝은 곳에서 전체가 보이게 찍어. 흠집이 있으면 그것도 찍어서 올려.",
+      "en": "Take it in a bright place so the whole bed is visible. If there are any scratches, take a photo of those and post it, too.",
+      "vi": "Cậu chụp ở chỗ sáng sao cho thấy được toàn bộ. Nếu có vết xước thì cũng chụp rồi đăng lên.",
+      "vi_back_ko": "밝은 곳에서 전체가 다 보이도록 사진을 찍어 주세요. 흠집이 있다면 그것도 함께 찍어서 올려 주세요."
+    }
+  ],
+  "shots": {
+    "shotA": "짐이 정리된 지원의 침실. 침대 앞에서 지원이 스마트폰을 들고(화면은 보이지 않게) 사진을 찍으려 하고 태민이 방법을 알려 줌 (투샷)",
+    "shotB": "태민 클로즈업. 친절하게 순서대로 설명하는 표정",
+    "shotC": "지원 클로즈업. 귀 기울이며 궁금해하는 표정"
+  },
+  "youtube": {
+    "en": {
+      "title": "Korean Conversation: How to Sell Furniture to a Second-Hand Store 🛏️ #shorts",
+      "description": "Today's Korean: 중고 가게에 물건 팔기 (Selling to a second-hand store)\n\n지원: 중고 가게에서 가구를 사 가기도 한다면서? 침대를 팔까 하는데 어떻게 하면 돼?\n태민: 먼저 침대 사진을 찍어서 가게 홈페이지에 올리고 어느 회사 제품인지도 써 봐. 그럼 가게에서 연락이 올 거야.\n지원: 사진은 어떻게 찍으면 돼?\n태민: 밝은 곳에서 전체가 보이게 찍어. 흠집이 있으면 그것도 찍어서 올려.\n\nListen, then repeat slowly! #LearnKorean #KoreanConversation #Korean #shorts\n\nVoices and images were created with AI."
+    },
+    "vi": {
+      "title": "Hội thoại tiếng Hàn: Cách bán đồ nội thất cho cửa hàng đồ cũ 🛏️ #shorts",
+      "description": "Tiếng Hàn hôm nay: 중고 가게에 물건 팔기 (Bán đồ cho cửa hàng đồ cũ)\n\n지원: 중고 가게에서 가구를 사 가기도 한다면서? 침대를 팔까 하는데 어떻게 하면 돼?\n태민: 먼저 침대 사진을 찍어서 가게 홈페이지에 올리고 어느 회사 제품인지도 써 봐. 그럼 가게에서 연락이 올 거야.\n지원: 사진은 어떻게 찍으면 돼?\n태민: 밝은 곳에서 전체가 보이게 찍어. 흠집이 있으면 그것도 찍어서 올려.\n\nNghe rồi nói theo nhé! #HocTiengHan #TiengHan #shorts\n\nGiọng nói và hình ảnh được tạo bằng AI."
+    }
+  },
+  "tiktok_vi": {
+    "caption": "Tiếng Hàn: Cách bán đồ nội thất cho cửa hàng đồ cũ 🛏️ Nghe rồi nói theo nhé! #hoctienghan #tienghan #tienghangiaotiep #korean"
+  },
+  "uploads": {}
+}

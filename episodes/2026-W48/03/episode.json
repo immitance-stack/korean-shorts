@@ -1,0 +1,97 @@
+{
+  "id": "2026-W48-03",
+  "status": "draft",
+  "style": "photo",
+  "cast": "지원: 30대 초반 한국 여성, 어깨까지 오는 밤색 곱슬머리, 베이지색 후드티. 태민: 30대 초반 한국 남성, 짧은 검은 머리, 초록색 체크 셔츠. 친한 친구 사이(반말).",
+  "topic": {
+    "ko": "가져가는 방법 확인하기",
+    "en": "Checking how items are picked up",
+    "vi": "Xác nhận cách lấy hàng"
+  },
+  "scene": "거실",
+  "characters": [
+    {
+      "id": "jiwon",
+      "name": "지원",
+      "color": "#d64b72",
+      "voice": "Kore"
+    },
+    {
+      "id": "taemin",
+      "name": "태민",
+      "color": "#3f6fd1",
+      "voice": "Charon"
+    }
+  ],
+  "lines": [
+    {
+      "speaker": "jiwon",
+      "shot": "shotC.png",
+      "emotion": "slightly worried, checking if it's a burden",
+      "emotion_ko": "조금 걱정하며 부담이 있는지 확인하듯",
+      "ko": "그러면 침대는 내가 갖다 줘야 돼?",
+      "en": "Then do I have to bring the bed over myself?",
+      "vi": "Vậy mình phải mang giường đến cửa hàng à?",
+      "vi_back_ko": "그럼 침대를 가게까지 가져가야 하나요?"
+    },
+    {
+      "speaker": "taemin",
+      "shot": "shotB.png",
+      "emotion": "calm and reassuring",
+      "emotion_ko": "차분하게 안심시키듯",
+      "ko": "아니, 가게에서 사람들이 와서 가져갈 거야.",
+      "en": "No, people from the store will come and pick it up.",
+      "vi": "Không, người của cửa hàng sẽ đến lấy.",
+      "vi_back_ko": "아니요, 매장 직원이 직접 수거하러 올 겁니다."
+    },
+    {
+      "speaker": "jiwon",
+      "shot": "shotC.png",
+      "emotion": "relieved and grateful",
+      "emotion_ko": "마음이 놓이고 고마워하며",
+      "ko": "다행이다. 혼자서는 못 옮기거든.",
+      "en": "That's a relief. I can't move it by myself.",
+      "vi": "May quá. Một mình mình không khiêng nổi.",
+      "vi_back_ko": "다행이다. 나 혼자서는 들 수 없었을 텐데."
+    },
+    {
+      "speaker": "taemin",
+      "shot": "shotB.png",
+      "emotion": "friendly reminder in a light tone",
+      "emotion_ko": "다정하게 가볍게 당부하듯",
+      "ko": "대신 가져가는 날짜는 미리 정해 놔.",
+      "en": "Just make sure to set the pickup date in advance.",
+      "vi": "Nhưng cậu nhớ hẹn trước ngày họ đến lấy nhé.",
+      "vi_back_ko": "하지만 그들이 물건을 찾으러 오기 전에 미리 약속을 잡아두는 걸 잊지 마세요."
+    },
+    {
+      "speaker": "jiwon",
+      "shot": "shotA.png",
+      "emotion": "cheerful and thankful, ready to act",
+      "emotion_ko": "밝게 고마워하며 해 볼 마음으로",
+      "ko": "알겠어. 알려 줘서 고마워!",
+      "en": "Got it. Thanks for letting me know!",
+      "vi": "Mình hiểu rồi. Cảm ơn cậu đã chỉ cho mình!",
+      "vi_back_ko": "알겠어요. 알려줘서 고마워요!"
+    }
+  ],
+  "shots": {
+    "shotA": "짐 상자가 조금 남은 거실 소파. 지원과 태민이 나란히 앉아 이야기하며 지원이 안심하는 모습 (투샷)",
+    "shotB": "태민 클로즈업. 차분히 안심시키다가 가볍게 당부하는 표정",
+    "shotC": "지원 클로즈업. 걱정하다가 안심하며 고마워하는 표정"
+  },
+  "youtube": {
+    "en": {
+      "title": "Korean Conversation: Do I Have to Bring It Myself? 🚚 #shorts",
+      "description": "Today's Korean: 가져가는 방법 확인하기 (Checking how items are picked up)\n\n지원: 그러면 침대는 내가 갖다 줘야 돼?\n태민: 아니, 가게에서 사람들이 와서 가져갈 거야.\n지원: 다행이다. 혼자서는 못 옮기거든.\n태민: 대신 가져가는 날짜는 미리 정해 놔.\n지원: 알겠어. 알려 줘서 고마워!\n\nListen, then repeat slowly! #LearnKorean #KoreanConversation #Korean #shorts\n\nVoices and images were created with AI."
+    },
+    "vi": {
+      "title": "Hội thoại tiếng Hàn: Tôi có phải tự mang đến không? 🚚 #shorts",
+      "description": "Tiếng Hàn hôm nay: 가져가는 방법 확인하기 (Xác nhận cách lấy hàng)\n\n지원: 그러면 침대는 내가 갖다 줘야 돼?\n태민: 아니, 가게에서 사람들이 와서 가져갈 거야.\n지원: 다행이다. 혼자서는 못 옮기거든.\n태민: 대신 가져가는 날짜는 미리 정해 놔.\n지원: 알겠어. 알려 줘서 고마워!\n\nNghe rồi nói theo nhé! #HocTiengHan #TiengHan #shorts\n\nGiọng nói và hình ảnh được tạo bằng AI."
+    }
+  },
+  "tiktok_vi": {
+    "caption": "Tiếng Hàn: Tôi có phải tự mang đến không? 🚚 Nghe rồi nói theo nhé! #hoctienghan #tienghan #tienghangiaotiep #korean"
+  },
+  "uploads": {}
+}
