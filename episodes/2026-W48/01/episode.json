@@ -1,6 +1,6 @@
 {
   "id": "2026-W48-01",
-  "status": "script_approved",
+  "status": "awaiting_approval",
   "style": "photo",
   "cast": "지원: 30대 초반 한국 여성, 어깨까지 오는 밤색 곱슬머리, 베이지색 후드티. 태민: 30대 초반 한국 남성, 짧은 검은 머리, 초록색 체크 셔츠. 친한 친구 사이(반말).",
   "topic": {
@@ -94,5 +94,12 @@
     "caption": "Tiếng Hàn: Sắp chuyển nhà rồi! 📦 Nghe rồi nói theo nhé! #hoctienghan #tienghan #tienghangiaotiep #korean"
   },
   "uploads": {},
-  "publish_date": "2026-11-25"
+  "publish_date": "2026-11-25",
+  "cloudflare": {
+    "model": "@cf/black-forest-labs/flux-2-dev",
+    "shotA": "텍스트 프롬프트로 생성(이번 주 기준 사진)",
+    "shotB": "shotA 기준 태민 클로즈업",
+    "shotC": "shotA 기준 지원 클로즈업"
+  },
+  "note": "2026-11-25 KST: 제작 완료(영상 53초). 1·3번 대사 외 2·3·5번은 감정 음성, 1번·4번은 기본 음성(감정 음성이 기본보다 길어 탈락). 전체 음성 받아쓰기 통과(영어 없음). 2번 대사 첫 감탄사가 받아쓰기마다 '어/와'로 달라짐(인식 잡음으로 봄). 천천히 구간 받아쓰기는 하지 않음."
 }
