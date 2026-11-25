@@ -16,7 +16,7 @@
 | 플랫폼 | 버전 | 방법 |
 |---|---|---|
 | YouTube | en, vi 둘 다 (**한 채널**에 같은 날 2편) | Zapier `upload_video` (영상 파일은 GitHub Release의 공개 주소로 전달) |
-| TikTok | vi | 사용자가 직접 업로드. 영상 파일 + 설명/해시태그를 SendUserFile로 전달 |
+| TikTok | vi | 사용자가 직접 업로드. 영상은 승인 요청 때 보낸 vi 파일을 그대로 쓰므로 승인 후에는 설명/해시태그만 글로 안내 |
 | Instagram 릴스 | — | 사용하지 않음 |
 
 **사용자가 승인하기 전에는 절대 업로드하지 않는다.** 승인은 매번 받는다.
@@ -127,7 +127,7 @@ ffmpeg -i renders/X.mp4 -c:v libx264 -crf 21 -preset medium -pix_fmt yuv420p -c:
    - `made_for_kids`: `false` / `tags`: Korean, Learn Korean, Korean conversation 등
    - 설명 끝에 AI 음성·일러스트 사용 사실을 한 줄 적는다.
 3. `bash studio/media_branch.sh clear` 로 공개 영상을 비운다.
-4. vi 영상 파일과 `tiktok_vi.caption`을 사용자에게 보내 TikTok에 직접 올리도록 안내한다.
+4. `tiktok_vi.caption`(설명·해시태그)만 안내한다. TikTok에 올릴 vi 영상은 승인 요청 때 이미 보낸 것과 같은 파일이므로 **다시 보내지 않는다**(사용자 피드백). 사용자가 파일을 다시 달라고 할 때만 보낸다.
 5. 링크를 `uploads`에 기록, `status: "uploaded"`, 커밋·푸시.
 
 ## 비용 원칙
