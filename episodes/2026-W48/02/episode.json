@@ -1,6 +1,6 @@
 {
   "id": "2026-W48-02",
-  "status": "script_approved",
+  "status": "awaiting_approval",
   "style": "photo",
   "cast": "지원: 30대 초반 한국 여성, 어깨까지 오는 밤색 곱슬머리, 베이지색 후드티. 태민: 30대 초반 한국 남성, 짧은 검은 머리, 초록색 체크 셔츠. 친한 친구 사이(반말).",
   "topic": {
@@ -41,8 +41,8 @@
       "emotion_ko": "친절하고 또렷하게 순서대로 알려 주듯",
       "ko": "먼저 침대 사진을 찍어서 가게 홈페이지에 올리고 어느 회사 제품인지도 써 봐. 그럼 가게에서 연락이 올 거야.",
       "en": "First, take a picture of the bed, post it on the store's website, and write which company's product it is. Then the store will contact you.",
-      "vi": "Trước tiên, cậu chụp ảnh cái giường rồi đăng lên trang web của cửa hàng, nhớ ghi cả là sản phẩm của hãng nào nữa. Sau đó cửa hàng sẽ liên lạc với cậu.",
-      "vi_back_ko": "먼저, 침대 사진을 찍어서 매장 웹사이트에 올리고, 어떤 브랜드 제품인지 꼭 기재해 주세요. 그러면 매장에서 연락을 드릴 것입니다."
+      "vi": "Trước tiên, cậu chụp ảnh giường, đăng lên trang web của cửa hàng và ghi rõ là hãng nào. Sau đó cửa hàng sẽ liên lạc.",
+      "vi_back_ko": "먼저 침대 사진을 찍어서 가게 웹사이트에 올리고, 어떤 브랜드인지 명확히 기재하세요. 그러면 가게에서 연락을 드릴 것입니다."
     },
     {
       "speaker": "jiwon",
@@ -84,5 +84,12 @@
     "caption": "Tiếng Hàn: Cách bán đồ nội thất cho cửa hàng đồ cũ 🛏️ Nghe rồi nói theo nhé! #hoctienghan #tienghan #tienghangiaotiep #korean"
   },
   "uploads": {},
-  "publish_date": "2026-11-26"
+  "publish_date": "2026-11-26",
+  "cloudflare": {
+    "model": "@cf/black-forest-labs/flux-2-dev",
+    "shotA": "1편 shotA를 기준으로 편집(같은 두 사람, 정리된 방과 침대, 스마트폰은 뒷면만 보이게)",
+    "shotB": "shotA 기준 태민 클로즈업",
+    "shotC": "shotA 기준 지원 클로즈업"
+  },
+  "note": "2026-11-26 KST: 제작 완료(영상 61초). 2~4번 대사 감정 음성, 1번 대사(선생님 대본)는 감정 음성이 길어 3번 탈락 후 기본 음성. 베트남어 2번 대사 자막이 카드 밖으로 넘쳐 짧게 줄임(vi/vi_back_ko 수정). 전체 음성 받아쓰기 통과(영어 없음). 천천히 구간 받아쓰기는 하지 않음."
 }
