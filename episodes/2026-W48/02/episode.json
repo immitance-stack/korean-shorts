@@ -1,6 +1,6 @@
 {
   "id": "2026-W48-02",
-  "status": "awaiting_approval",
+  "status": "uploaded",
   "style": "photo",
   "cast": "지원: 30대 초반 한국 여성, 어깨까지 오는 밤색 곱슬머리, 베이지색 후드티. 태민: 30대 초반 한국 남성, 짧은 검은 머리, 초록색 체크 셔츠. 친한 친구 사이(반말).",
   "topic": {
@@ -83,7 +83,12 @@
   "tiktok_vi": {
     "caption": "Tiếng Hàn: Cách bán đồ nội thất cho cửa hàng đồ cũ 🛏️ Nghe rồi nói theo nhé! #hoctienghan #tienghan #tienghangiaotiep #korean"
   },
-  "uploads": {},
+  "uploads": {
+    "youtube_en": "https://www.youtube.com/watch?v=nBz1HcxAawg",
+    "youtube_vi": "https://www.youtube.com/watch?v=BsUdNC_cE7w",
+    "uploaded_at_kst": "2026-11-26 17:27",
+    "tiktok_vi": "사용자 직접 업로드"
+  },
   "publish_date": "2026-11-26",
   "cloudflare": {
     "model": "@cf/black-forest-labs/flux-2-dev",
